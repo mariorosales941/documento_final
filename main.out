@@ -1,0 +1,65 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [0][-]{chapter.2}{An\341lisis de Requerimientos}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Etapa 1 - An\341lisis de Requerimientos 2}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Ingenier\355a de Requerimientos}{section.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.1.1}{Introducci\363n}{subsection.2.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.1.2}{Actividades de la Ingenier\355a de Requerimientos}{subsection.2.1.1}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.1.3}{Interesados o Stakeholders}{subsection.2.1.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.1.4}{Ingenier\355a de Requerimientos: T\351cnicas y Herramientas}{subsection.2.1.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.2}{Requerimientos Identificados}{section.2.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.2.1}{Requerimientos Funcionales.}{subsection.2.1.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.2.2}{Requerimientos No Funcionales}{subsection.2.1.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.3}{Representaci\363n de los requerimientos recolectados}{section.2.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.1.3.1}{Casos de Uso}{subsection.2.1.3}% 13
+\BOOKMARK [2][-]{subsection.2.1.4}{An\341lisis y Definici\363n de Framework y Tecnolog\355as Complementarias}{section.2.1}% 14
+\BOOKMARK [3][-]{subsubsection.2.1.4.1}{Introducci\363n}{subsection.2.1.4}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.4.2}{Lenguajes de Programaci\363n Back-End}{subsection.2.1.4}% 16
+\BOOKMARK [3][-]{subsubsection.2.1.4.3}{Lenguajes de Programaci\363n Front-End}{subsection.2.1.4}% 17
+\BOOKMARK [3][-]{subsubsection.2.1.4.4}{Frameworks Back-End}{subsection.2.1.4}% 18
+\BOOKMARK [3][-]{subsubsection.2.1.4.5}{Frameworks Front-End}{subsection.2.1.4}% 19
+\BOOKMARK [3][-]{subsubsection.2.1.4.6}{Bases de Datos}{subsection.2.1.4}% 20
+\BOOKMARK [3][-]{subsubsection.2.1.4.7}{Framewokrs para Testing}{subsection.2.1.4}% 21
+\BOOKMARK [3][-]{subsubsection.2.1.4.8}{Manejadores de Dependencias}{subsection.2.1.4}% 22
+\BOOKMARK [3][-]{subsubsection.2.1.4.9}{Bibliotecas}{subsection.2.1.4}% 23
+\BOOKMARK [3][-]{subsubsection.2.1.4.10}{Sistemas de Control de Versiones}{subsection.2.1.4}% 24
+\BOOKMARK [0][-]{chapter.3}{Dise\361o del Sistema}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Etapa 2 - Dise\361o del Sistema}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.1.1}{Introducci\363n}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.2}{Arquitectura del Sistema}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.3}{Descomposici\363n del Sistema en M\363dulos}{section.3.1}% 29
+\BOOKMARK [2][-]{subsection.3.1.4}{Dise\361o f\355sico de la Base de Datos}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.5}{Dise\361o de la Interfaz Gr\341fica de Usuario}{section.3.1}% 31
+\BOOKMARK [3][-]{subsubsection.3.1.5.1}{Aspectos fundamentales a la hora de Dise\361ar la Interfaz}{subsection.3.1.5}% 32
+\BOOKMARK [0][-]{chapter.4}{Desarrollo}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Introducci\363n}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{Desarrollo del Sistema}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.2.1}{P\341gina de Bienvenida e Inicio de Sesi\363n}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.2}{P\341gina Principal}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.3}{Funcionalidades Administrativas y de Configuraci\363n}{section.4.2}% 38
+\BOOKMARK [3][-]{subsubsection.4.2.3.1}{Administraci\363n de Usuarios}{subsection.4.2.3}% 39
+\BOOKMARK [3][-]{subsubsection.4.2.3.2}{Administraci\363n de Campos y Divisiones}{subsection.4.2.3}% 40
+\BOOKMARK [3][-]{subsubsection.4.2.3.3}{Administraci\363n de Caravanas}{subsection.4.2.3}% 41
+\BOOKMARK [3][-]{subsubsection.4.2.3.4}{Administraci\363n de Razas, Categor\355as y Sub Categor\355as}{subsection.4.2.3}% 42
+\BOOKMARK [3][-]{subsubsection.4.2.3.5}{Administraci\363n de Tipos de Actividades Veterinarias}{subsection.4.2.3}% 43
+\BOOKMARK [3][-]{subsubsection.4.2.3.6}{Administraci\363n de Clientes y Proveedores}{subsection.4.2.3}% 44
+\BOOKMARK [2][-]{subsection.4.2.4}{Funcionalidades Operativas}{section.4.2}% 45
+\BOOKMARK [3][-]{subsubsection.4.2.4.1}{Modulo Compras}{subsection.4.2.4}% 46
+\BOOKMARK [3][-]{subsubsection.4.2.4.2}{M\363dulo Cambios de Categor\355as}{subsection.4.2.4}% 47
+\BOOKMARK [3][-]{subsubsection.4.2.4.3}{M\363dulo Traslados}{subsection.4.2.4}% 48
+\BOOKMARK [3][-]{subsubsection.4.2.4.4}{M\363dulo Mortandad}{subsection.4.2.4}% 49
+\BOOKMARK [3][-]{subsubsection.4.2.4.5}{M\363dulo Actividades Veterinarias}{subsection.4.2.4}% 50
+\BOOKMARK [3][-]{subsubsection.4.2.4.6}{M\363dulo Ventas}{subsection.4.2.4}% 51
+\BOOKMARK [2][-]{subsection.4.2.5}{Reportes}{section.4.2}% 52
+\BOOKMARK [3][-]{subsubsection.4.2.5.1}{Reporte de Usuarios}{subsection.4.2.5}% 53
+\BOOKMARK [3][-]{subsubsection.4.2.5.2}{Reporte de Vacunos}{subsection.4.2.5}% 54
+\BOOKMARK [3][-]{subsubsection.4.2.5.3}{Reporte de Operaciones}{subsection.4.2.5}% 55
+\BOOKMARK [1][-]{section.4.3}{Resultados}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.3.1}{Objetivos y Alcance}{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.2}{Requerimientos}{section.4.3}% 58
+\BOOKMARK [2][-]{subsection.4.3.3}{Interfaz Gr\341fica de Usuario}{section.4.3}% 59
+\BOOKMARK [0][-]{chapter.5}{Pruebas}{}% 60
+\BOOKMARK [0][-]{chapter.6}{Conclusiones y Trabajos Futuros}{}% 61
+\BOOKMARK [0][-]{chapter.7}{Ap\351ndice - Casos de Uso}{}% 62
+\BOOKMARK [1][-]{section.7.1}{Casos de Uso}{chapter.7}% 63
+\BOOKMARK [2][-]{subsection.7.1.1}{Diagramas de Casos de Uso}{section.7.1}% 64
+\BOOKMARK [2][-]{subsection.7.1.2}{Fichas Textuales de Casos de Uso}{section.7.1}% 65

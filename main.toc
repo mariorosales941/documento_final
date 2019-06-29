@@ -1,0 +1,66 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{9}{chapter.1}
+\contentsline {chapter}{\numberline {2}An\IeC {\'a}lisis de Requerimientos}{10}{chapter.2}
+\contentsline {section}{\numberline {1}Etapa 1 - An\IeC {\'a}lisis de Requerimientos 2}{10}{section.2.1}
+\contentsline {subsection}{\numberline {1.1}Ingenier\IeC {\'\i }a de Requerimientos}{10}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Introducci\IeC {\'o}n}{10}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Actividades de la Ingenier\IeC {\'\i }a de Requerimientos}{13}{subsubsection.2.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}Interesados o Stakeholders}{13}{subsubsection.2.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.4}Ingenier\IeC {\'\i }a de Requerimientos: T\IeC {\'e}cnicas y Herramientas}{14}{subsubsection.2.1.1.4}
+\contentsline {subsection}{\numberline {1.2}Requerimientos Identificados}{15}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Requerimientos Funcionales.}{15}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}Requerimientos No Funcionales}{17}{subsubsection.2.1.2.2}
+\contentsline {subsection}{\numberline {1.3}Representaci\IeC {\'o}n de los requerimientos recolectados}{18}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Casos de Uso}{19}{subsubsection.2.1.3.1}
+\contentsline {subsection}{\numberline {1.4}An\IeC {\'a}lisis y Definici\IeC {\'o}n de Framework y Tecnolog\IeC {\'\i }as Complementarias}{21}{subsection.2.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Introducci\IeC {\'o}n}{21}{subsubsection.2.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Lenguajes de Programaci\IeC {\'o}n Back-End}{21}{subsubsection.2.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Lenguajes de Programaci\IeC {\'o}n Front-End}{22}{subsubsection.2.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}Frameworks Back-End}{23}{subsubsection.2.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.5}Frameworks Front-End}{26}{subsubsection.2.1.4.5}
+\contentsline {subsubsection}{\numberline {1.4.6}Bases de Datos}{26}{subsubsection.2.1.4.6}
+\contentsline {subsubsection}{\numberline {1.4.7}Framewokrs para Testing}{31}{subsubsection.2.1.4.7}
+\contentsline {subsubsection}{\numberline {1.4.8}Manejadores de Dependencias}{31}{subsubsection.2.1.4.8}
+\contentsline {subsubsection}{\numberline {1.4.9}Bibliotecas}{31}{subsubsection.2.1.4.9}
+\contentsline {subsubsection}{\numberline {1.4.10}Sistemas de Control de Versiones}{32}{subsubsection.2.1.4.10}
+\contentsline {chapter}{\numberline {3}Dise\IeC {\~n}o del Sistema}{33}{chapter.3}
+\contentsline {section}{\numberline {1}Etapa 2 - Dise\IeC {\~n}o del Sistema}{33}{section.3.1}
+\contentsline {subsection}{\numberline {1.1}Introducci\IeC {\'o}n}{33}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {1.2}Arquitectura del Sistema}{33}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {1.3}Descomposici\IeC {\'o}n del Sistema en M\IeC {\'o}dulos}{36}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {1.4}Dise\IeC {\~n}o f\IeC {\'\i }sico de la Base de Datos}{38}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {1.5}Dise\IeC {\~n}o de la Interfaz Gr\IeC {\'a}fica de Usuario}{39}{subsection.3.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Aspectos fundamentales a la hora de Dise\IeC {\~n}ar la Interfaz}{40}{subsubsection.3.1.5.1}
+\contentsline {chapter}{\numberline {4}Desarrollo}{43}{chapter.4}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{43}{section.4.1}
+\contentsline {section}{\numberline {2}Desarrollo del Sistema}{43}{section.4.2}
+\contentsline {subsection}{\numberline {2.1}P\IeC {\'a}gina de Bienvenida e Inicio de Sesi\IeC {\'o}n}{44}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {2.2}P\IeC {\'a}gina Principal}{46}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {2.3}Funcionalidades Administrativas y de Configuraci\IeC {\'o}n}{48}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Administraci\IeC {\'o}n de Usuarios}{49}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Administraci\IeC {\'o}n de Campos y Divisiones}{51}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Administraci\IeC {\'o}n de Caravanas}{56}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Administraci\IeC {\'o}n de Razas, Categor\IeC {\'\i }as y Sub Categor\IeC {\'\i }as}{57}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Administraci\IeC {\'o}n de Tipos de Actividades Veterinarias}{60}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Administraci\IeC {\'o}n de Clientes y Proveedores}{61}{subsubsection.4.2.3.6}
+\contentsline {subsection}{\numberline {2.4}Funcionalidades Operativas}{61}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Modulo Compras}{62}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}M\IeC {\'o}dulo Cambios de Categor\IeC {\'\i }as}{64}{subsubsection.4.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}M\IeC {\'o}dulo Traslados}{65}{subsubsection.4.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}M\IeC {\'o}dulo Mortandad}{66}{subsubsection.4.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}M\IeC {\'o}dulo Actividades Veterinarias}{67}{subsubsection.4.2.4.5}
+\contentsline {subsubsection}{\numberline {2.4.6}M\IeC {\'o}dulo Ventas}{67}{subsubsection.4.2.4.6}
+\contentsline {subsection}{\numberline {2.5}Reportes}{68}{subsection.4.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Reporte de Usuarios}{69}{subsubsection.4.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Reporte de Vacunos}{71}{subsubsection.4.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Reporte de Operaciones}{71}{subsubsection.4.2.5.3}
+\contentsline {section}{\numberline {3}Resultados}{72}{section.4.3}
+\contentsline {subsection}{\numberline {3.1}Objetivos y Alcance}{72}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {3.2}Requerimientos}{73}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {3.3}Interfaz Gr\IeC {\'a}fica de Usuario}{74}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5}Pruebas}{76}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusiones y Trabajos Futuros}{77}{chapter.6}
+\contentsline {chapter}{\numberline {7}Ap\IeC {\'e}ndice - Casos de Uso}{78}{chapter.7}
+\contentsline {section}{\numberline {1}Casos de Uso}{78}{section.7.1}
+\contentsline {subsection}{\numberline {1.1}Diagramas de Casos de Uso}{78}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {1.2}Fichas Textuales de Casos de Uso}{82}{subsection.7.1.2}

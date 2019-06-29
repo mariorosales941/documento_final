@@ -206,12 +206,20 @@
 
 % para ajustar la fuente del título de la tabla de contenidos
 \renewcommand{\cfttoctitlefont}{\Large\bfseries}	
-\tableofcontents
+\tableofcontents     	% Índice
+\newpage
+\listoffigures	     	% Índice de figuras
+\newpage
+\listoftables	     	% Índice de tablas
+\newpage
+\lstlistoflistings 	    % Índice de códigos
 
 \clearpage
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introducción}
+
 \chapter{Análisis de Requerimientos}
 \section{Etapa 1 - Análisis de Requerimientos 2}
 
@@ -659,13 +667,13 @@ De esta manera, quedan aún MySQL y PostgreSql. De ellos se ha realizado un aná
 \textit{PostgreSQL tiene varias características dedicadas a la extensibilidad. Es posible agregar nuevos tipos, nuevas funciones o nuevos tipos de índice, por ejemplo. MySQL no tiene soporte para extensibilidad.}
 \end{itemize}
 
-En la tabla \eqref{fig102} se muestra un cuadro resumen de la comparación realizada, según los puntos listados anteriormente. Aunque hay muchas similitudes y coincidencias entre ambos, también hay diferencias bien marcadas. Sin embargo, es necesario evaluar el escenario particular y determinar qué base de datos es la más adecuada para el caso de uso específico. Por el tipo de trabajo a realizar y por las caracteŕisticas buscadas, se elige a PostgresSQL como DBMS.
+En la tabla \eqref{fig101} se muestra un cuadro resumen de la comparación realizada, según los puntos listados anteriormente. Aunque hay muchas similitudes y coincidencias entre ambos, también hay diferencias bien marcadas. Sin embargo, es necesario evaluar el escenario particular y determinar qué base de datos es la más adecuada para el caso de uso específico. Por el tipo de trabajo a realizar y por las caracteŕisticas buscadas, se elige a PostgresSQL como DBMS.
 
 \renewcommand{\figurename}{Tabla.} 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.8]{figs/Tabla_Comparativa_DB.pdf}}
+\centerline{\includegraphics[scale=0.8]{figs/capitulo_1_analisis/Tabla_Comparativa_DB.pdf}}
 \caption{Tabla Comparativa de Motores de Base de Datos.}
-\label{fig102}
+\label{fig101}
 \end{figure}
 \renewcommand{\figurename}{Figura.}
 
@@ -698,6 +706,7 @@ En la tabla \eqref{fig102} se muestra un cuadro resumen de la comparación reali
 \clearpage
 \newpage
 \chapter{Diseño del Sistema}
+
 \section{Etapa 2 - Diseño del Sistema} \label{capitulo2}
 
 \subsection{Introducción}
@@ -763,7 +772,7 @@ En ingeniería de software, un \textit{Diagrama de Clases} en Lenguaje Unificado
 Los diagramas son el nexo entre los requerimientos del sistema y el sistema propiamente dicho. Es decir, que cuanto mas pueda describirse la estructura y lógica del sistema a través de estos modelos UML, mejor aún será el nivel de detalle alcanzado y será mas fácil abordar el problema.
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.55]{figs/FINAL_Diagrama_Clases.pdf}}
+\centerline{\includegraphics[scale=0.55]{figs/capitulo_2_disenio/FINAL_Diagrama_Clases.pdf}}
 \caption{Diseño del Sistema: Diagrama de Clases.}
 \label{fig201}
 \end{figure}
@@ -774,7 +783,7 @@ Los diagramas son el nexo entre los requerimientos del sistema y el sistema prop
 Tomando referencia del diagrama de clases se diseño la base de datos. El diagrama físico de la base de datos puede apreciarse en la Fig. \eqref{fig202}. En él, se encuentran los atributos y relaciones entre las distintas tablas. Los elementos utilizados para representar estas relaciones son los denominados Foreign Key (FK) que intentan esbozar la relación de existencia de una instancia de una clase, en otra. Por otro lado, dentro de una misma tabla, la forma de identificar e individualizar cada registro se hace bajo la utilización de lo que se denomina Primary Key (PK). Visualmente, los atributos PK poseen un asterisco (*) a su izquierda mientras que los atributos FK poseen en su nombre dicha propiedad. 
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.4]{figs/FINAL_Diagrama_Fisico_DB.pdf}}
+\centerline{\includegraphics[scale=0.4]{figs/capitulo_2_disenio/FINAL_Diagrama_Fisico_DB.pdf}}
 \caption{Diseño del Sistema: Diseño Físico de la Base de Datos.}
 \label{fig202}
 \end{figure}
@@ -811,7 +820,7 @@ A continuación se describen aquellos aspectos que han sido considerados a la ho
 \textit{La ventaja de utilizar un diseño adaptable radica en que con una sola versión en \textbf{HTML} y \textbf{CSS} se pueden cubrir todas las resoluciones de pantalla, con lo que el sitio web estará optimizado para distintos dispositivos y resoluciones.}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.3]{figs/responsive_2.jpg}}
+\centerline{\includegraphics[scale=0.3]{figs/capitulo_2_disenio/responsive_2.jpg}}
 \caption{Diseño del Sistema: Diseño Adaptable.}
 \label{fig203}
 \end{figure}
@@ -850,18 +859,572 @@ A continuación se muestran a modo de ejemplo unas ilustraciones de páginas que
 En la Fig. \eqref{fig204} se muestra la pantalla de \textit{Inicio de Sesión} mientras que en la Fig. \eqref{fig205} se muestra el formulario mediante el cual se procede a registrar la \textit{Compra de Vacunos}. Ambas están representadas en dispositivos que poseen diferentes características de resolución de pantalla esbozando, de esta manera, la adaptabilidad del sitio.
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.7]{figs/loginForm.pdf}}
+\centerline{\includegraphics[scale=0.7]{figs/capitulo_2_disenio/loginForm.pdf}}
 \caption{Diseño del Sistema: Inicio de Sesión.}
 \label{fig204}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.7]{figs/compraForm.pdf}}
+\centerline{\includegraphics[scale=0.7]{figs/capitulo_2_disenio/compraForm.pdf}}
 \caption{Diseño del Sistema: Formulario de Compra.}
 \label{fig205}
 \end{figure}
 
 \chapter{Desarrollo}
+
+\section{Introducción}
+%Siguiendo el modelo en Cascada propuesto para este proyecto, la etapa $3$ corresponde al \textit{Desarrollo del Sistema}. En el presente Informe de Avance se incluyen las actividades de programación de cada una de las funcionalidades definidas en etapas previas de Especificación de Requerimientos y Diseño del sistema. A lo largo de este documento se brinda una descripción general de las funcionalidades implementadas y los resultados obtenidos a partir de ellas. Las actividades ejecutadas en esta etapa dieron como resultado una primer versión del Sistema de Gestión y Seguimiento de Trazabilidad de Ganado Vacuno.
+
+Siguiendo el modelo en Cascada propuesto para este proyecto, la etapa $3$ corresponde al \textit{Desarrollo del Sistema}. En el presente informe se realiza una breve descripción del desarrollo de las funcionalidades del software, definidas previamente en las etapas de \textit{Especificación de Requerimientos} y \textit{Diseño del Sistema}. Al llevar adelante las actividades propias de la instancia bajo análisis se obtuvo como resultado una primer versión del Sistema de Gestión y Seguimiento de Trazabilidad de Ganado Vacuno.
+
+Para lograr los objetivos de esta etapa ha sido necesario conseguir un grado de entendimiento y dominio de las tecnologías seleccionadas para el proyecto, a la vez que se iniciaron las tareas de programación del sistema.
+
+Por otro lado, conforme fueron avanzando las tareas del proyecto, fue necesario modificar y reestructurar aspectos de diseño para adaptarlos de manera acorde a los requerimientos del software. Al finalizar, se presenta un cronograma con las actividades restantes para culminar con el proyecto.
+
+\section{Desarrollo del Sistema}
+
+En la etapa previa, \textit{Diseño del Sistema}, se definieron pautas a respetar para lograr una interfaz gráfica de usuario adecuada. Basándose en dichas pautas se confeccionaron las vistas que permiten a los usuarios interactuar con las funcionalidades del software.
+
+A continuación, siguiendo la división modular definida para el sistema, se presentan algunas capturas de pantallas del software junto con una descripción de las funcionalidades contenidas dentro de las mismas. Sin embargo, antes de comenzar con la descripción, es relevante mencionar que no todas las pantallas del sistema son ilustradas debido a que muchas de ellas presentan aspectos similares tanto a nivel estético como funcional.
+
+\subsection{Página de Bienvenida e Inicio de Sesión}
+La página de bienvenida es una pantalla que contiene, como única acción, la de \textit{Iniciar Sesión}, como puede verse en la \textit{Fig.} \eqref{fig401}.
+
+%El sistema contará con un único \textit{Usuario Administrador} mediante el cual se podrá configurar y administrar el software. Dicho usuario, podrá hacer la puesta a punto y registrar a los demás usuarios.
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig401.pdf}}
+\caption{Página de Bienvenida.}
+\label{fig401}
+\end{figure}
+
+\newpage
+Cave destacar que el software cuenta con un modulo completo de autenticación de usuario, tal como puede encontrarse en cualquier otra aplicación. Este módulo contiene las funcionalidades de \textit{Iniciar Sesión}, \textit{Recordar Datos}, \textit{Recuperación de Contraseña} y \textit{Verificación de Correo Electrónico}. En la \textit{Fig.} \eqref{fig402} puede observarse el formulario de inicio de sesión, el cual presenta acceso a las características mencionadas.
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig402.pdf}}
+\caption{Página de Inicio de Sesión.}
+\label{fig402}
+\end{figure}
+
+\newpage
+\subsection{Página Principal}
+La página principal es el punto de acceso primario a todas las pantallas del sistema. Es decir, en ella se encuentra el menú principal, desde el cual cada usuario puede acceder a las funcionalidades del software. 
+
+La aplicación cuenta con un conjunto de perfiles que identifican a cada uno de los usuarios y limitan el acceso a las diferentes funcionalidades implementadas. Los perfiles definidos son los siguientes:
+\begin{itemize}
+\item \textbf{Administrador:} usuario que posee acceso a todas las funcionalidades del sistema. Encargado de realizar la puesta a punto del sistema, dar de alta usuarios, entre otras.
+\item \textbf{Encargado en Jefe:} usuario con permisos para ver, registrar, modificar y eliminar operaciones. Responsable de controlar y coordinar las actividades de los encargados.
+\item \textbf{Encargado:} usuario con permisos para ver, registrar, modificar y eliminar operaciones correspondientes al campo que haya sido asignado. Responsable de controlar y coordinar las actividades de los peones.
+\item \textbf{Veterinario en Jefe:} usuario con permisos para ver, registrar, modificar y eliminar operaciones veterinarias. Responsable de controlar y coordinar las actividades de los veterinarios.
+\item \textbf{Veterinario:} usuario con permisos para ver, registrar, modificar y eliminar operaciones veterinarias correspondientes al campo que haya sido asignado.
+\item \textbf{Peón:} usuario con permisos para ver operaciones correspondientes al campo al que haya sido asignado. No podrán registrar, modificar o eliminar operaciones.
+\end{itemize}
+
+La \textit{Fig.} \eqref{fig403} muestra todas las opciones disponibles para el usuario administrador, de esta forma, el menú contendrá diferentes opciones dependiendo del perfil del usuario autenticado. 
+
+Por otro lado, se brinda en forma reducida un acceso directo a los \textit{Últimos Movimientos} registrados en el sistema. Los mismos, pueden ser \textit{Compras}, \textit{Cambios de Categoría}, \textit{Traslados}, \textit{Mortandad}, \textit{Actividad Veterinaria} o bien \textit{Ventas}. Por ejemplo, en la \textit{Fig.} \eqref{figresumencompra}, puede observarse información breve sobre las compras registradas. Sobre cada una de ellas se muestra su Nro. de Factura, el Campo al que pertenece, el Proveedor, la Fecha y qué Usuario ha registrado la misma. Finalmente, a través del botón \textit{Ver}, el usuario puede acceder al detalle de una compra en particular.
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig403.pdf}}
+\caption{Página Principal.}
+\label{fig403}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/resumen_compra.pdf}}
+\caption{Últimos movimientos: Compras.}
+\label{figresumencompra}
+\end{figure}
+
+\newpage
+\subsection{Funcionalidades Administrativas y de Configuración}\label{FAC}
+Las funcionalidades administrativas y de configuración, permiten adaptar el software a las necesidades del cliente. Este tipo de configuraciones sólo pueden ser llevadas a cabo por el usuario administrador. No es posible modificar las reglas de negocio preestablecidas para cada caso, en su lugar, pueden configurarse aspectos relacionados a usuarios, campos, divisiones, razas, categorías, sub categorías, operaciones, clientes y proveedores. A cada una de estas características se las puede modificar, eliminar o bien crear nuevas.
+
+%\begin{figure}[tbhp]
+%\centerline{\includegraphics[scale=0.87]{figs/menu.pdf}}
+%\caption{Menú.}
+%\label{menu}
+%\end{figure}
+
+%En la \textit{Fig.} \eqref{menu} puede observarse el menú que posee la aplicación. Comenzando por la izquierda, se listan y describen de forma breve cada una de las opciones presentes en dicho menú:
+Es posible tomar contacto con las características mencionadas anteriormente a través del menú que posee la aplicación. Menú que puede apreciarse en la página principal del sistema (ver \textit{Fig.} \eqref{fig403}), y que contiene las siguientes opciones:
+\begin{itemize}
+\item \textbf{SGSTGV:} Sistema de Gestión y Seguimiento de Trazabilidad de Ganado Vacuno, abreviado como SGSTGV, es una opción presente en todas las pantallas del sistema sin importar el perfil del usuario autenticado. Esta opción dirige al usuario a la Página de Bienvenida (ver \textit{Fig.} \eqref{fig401}).
+\item \textbf{Inicio:} acceso a la Página Principal. También presente en todas las pantallas del sistema, sin importar el perfil del usuario autenticado.
+\item \textbf{Usuarios:} acceso las funcionalidades correspondientes a los usuarios.
+\item \textbf{Vacunos:} acceso a las funcionalidades asociadas a Caravanas y Vacunos.
+\newpage
+\item \textbf{Configuración:} acceso a las características del sistema que el usuario administrador debe configurar para ajustar el sistema a sus necesidades. Dentro de dicho sub menú se encuentran las siguientes opciones:
+\begin{itemize}
+\item Campos
+\item Divisiones
+\item Campos / 	Divisiones
+\item Razas
+\item Categorías
+\item Sub Categorías
+\item Categorías / Sub Categorías
+\item Operaciones
+\item Clientes
+\item Proveedores
+\item Actividades Veterinarias
+\end{itemize}
+\item \textbf{Operaciones:} acceso a las distintas operaciones que pueden ser realizadas, entre ellas:
+\begin{itemize}
+\item Compras
+\item Cambios de Categorías
+\item Traslados
+\item Mortandad
+\item Actividades Veterinarias
+\item Ventas
+\end{itemize}
+\item \textbf{Reportes:} acceso a resúmenes que el sistema permite emitir.
+\end{itemize}
+
+A continuación se describen con mayor nivel de detalles las configuraciones disponibles.
+
+\subsubsection{Administración de Usuarios}
+La página de usuarios (ver \textit{Fig.} \eqref{fig404}), brinda información acerca de los usuarios registrados en el sistema. Desde allí, es posible observar una lista con los datos mas relevantes de cada persona. El administrador puede ver el \textit{Detalle}, \textit{Editar}, \textit{Eliminar} o bien crear un nuevo usuario. Además, se ha implementado la paginación que permite ver a los usuarios de forma simple y clara, como así también es posible realizar filtros a través del campo de búsqueda destinado para tal fin.
+
+Tanto para la creación de un nuevo usuario como para la edición de uno ya existente, es necesario interactuar con un formulario que contiene la información solicitada por el sistema (ver \textit{Fig.} \eqref{fig405}).
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig404.pdf}}
+\caption{Página principal de usuarios.}
+\label{fig404}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig405.pdf}}
+\caption{Formulario de registro de usuarios.}
+\label{fig405}
+\end{figure}
+
+\newpage
+Para aquellos usuarios que posean un perfil de administrador, encargado en jefe o veterinario en jefe, no será necesario seleccionar un campo. Esto se debe a que un usuario con un perfil similar a los mencionados podrá ejecer sobre cualquiera de los campos registrados en el sistema.
+
+\subsubsection{Administración de Campos y Divisiones}
+La empresa o entidad ganadera, puede contar con mas de un campo en los cuales estén distribuidos sus vacunos. Cada campo, a su vez, puede estar dividido en sectores que permitan aprovechar al máximo los recursos. Las divisiones, en el contexto del presente proyecto, hacen referencia a las secciones en las que un campo es particionado y en las cuales los vacunos son distribuidos. Por tanto, el sistema brinda la posibilidad de crear, actualizar y eliminar campos y divisiones. 
+
+ Por ejemplo, por razones de organización y control de animales, estos suelen ser organizados y agrupados según razas, categorías y sub categorías en, por ejemplo, \textit{corrales} o \textit{potreros}, según el espacio físico de cada división, o bien, en caso de animales de avanzada edad, en \textit{campo abierto}, donde son liberados para su engorde final y posterior venta.
+
+Luego de haberse creado los campos y divisiones, es necesario indicar cuales divisiones estarán comprendidas en un campo en particular. Por tanto, queda registrada una relación entre un campo y una división que posteriormente podrá ser utilizada en las funcionalidades operativas. De esta manera es posible elegir el lugar en donde serán alojados los vacunos recientemente adquiridos a través de una compra.
+
+En la página de campos (ver \textit{Fig.} \eqref{fig406}), puede apreciarse una tabla con los campos registrados en el sistema. Desde allí, el usuario puede acceder a las acciones mencionadas mas arriba. El registro de un nuevo campo puede hacerse a través del formulario correspondiente (ver \textit{Fig.} \eqref{fig407}). 
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig406.pdf}}
+\caption{Página principal de campos.}
+\label{fig406}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig407.pdf}}
+\caption{Formulario de registro de campos.}
+\label{fig407}
+\end{figure}
+
+\newpage
+Por otro lado, la página de divisiones (ver \textit{Fig.} \ref{fig408}), contiene las mismas características que la página de campos pero con la información correspondiente a las mismas. El registro de una nueva división puede hacerse a través del formulario correspondiente (ver \textit{Fig.} \ref{fig409}).
+
+En ambos casos, tanto para campos como para divisiones, los formularios de actualización son similares a los de registro. Estos no son ilustrados en el presente informe por ser similares a los ya expuestos.
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig408.pdf}}
+\caption{Página principal de divisiones.}
+\label{fig408}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig409.pdf}}
+\caption{Formulario de registro de divisiones.}
+\label{fig409}
+\end{figure}
+
+\newpage
+Por último, resta generar la relación entre campos y divisiones. Esto puede hacerse desde el botón \textit{Campos y Divisiones} presente tanto en el formulario de registro de campos como en el de divisiones. Esto dirige al usuario al formulario de registro de una nueva relación (ver \textit{Fig.} \ref{fig411}). Cada relación creada puede observarse en la página de relacionees entre campos y divisiones (ver \textit{Fig.} \ref{fig410}).
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig410.pdf}}
+\caption{Página principal de relaciones entre campos y divisiones.}
+\label{fig410}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig411.pdf}}
+\caption{Formulario de registro de relaciones entre campos y divisiones.}
+\label{fig411}
+\end{figure}
+
+\newpage
+\subsubsection{Administración de Caravanas}
+Las caravanas son una parte fundamental del presente proyecto ya que sin ellas no se podría identificar e individualizar a los vacunos.
+
+El \textit{Servicio Nacional de Sanidad y Calidad Agroalimentaria} (Senasa), es un organismo descentralizado dependiente del \textit{Ministerio de Producción y Trabajo de la Nación y de la Secretaria de Agroindustria}. Es el encargado de ejecutar las políticas nacionales en materia de sanidad y calidad animal y vegetal e inocuidad de los alimentos de su competencia, así como de verificar el cumplimiento de la normativa vigente en la materia. En síntesis, el Senasa es responsable de planificar, organizar y ejecutar programas y planes específicos que reglamentan la producción, orientándola hacia la obtención de alimentos inocuos para el consumo humano y animal.
+
+Una de las responsabilidades que posee el Senasa es la de porporcionar caravanas que son solicitadas por los productores o empresas dedicados a la cría y producción de ganado. Por tanto, una vez solicitadas las caravanas, las mismas deben ser registradas en el sistema a través del formulario implementado para tal fin, el cual se ilustra en la \textit{Fig.} \eqref{fig413}. El resultado de dicha operación puede observarse en la página principal de caravanas (ver \textit{Fig.} \eqref{fig412}).
+
+Cabe destacar que las Funcionalidades Operativas, que serán descriptas en el \textit{Apartado} \eqref{FO}, dependen en gran medida de las caravanas ya que cada una de ellas las utilizan para representar a aquellos vacunos que formen parte de la operación que se este llevando a cabo.
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig412.pdf}}
+\caption{Página principal de Caravanas.}
+\label{fig412}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig413.pdf}}
+\caption{Formulario de registro de nuevas caravanas.}
+\label{fig413}
+\end{figure}
+
+\subsubsection{Administración de Razas, Categorías y Sub Categorías}
+En biología, raza se refiere a los grupos en que se subdividen algunas especies basándose en sus rasgos fenotípicos, a partir de una serie de características que se transmiten por herencia genética. El concepto de raza tiene gran importancia en Ganadería, pues la raza es importante para la obtención del óptimo rendimiento de la crianza.
+
+Por tanto, en el contexto del presente trabajo, las razas permiten agrupar a los individuos que compartan características biológicas y, debido a que es posible trabajar con más de una raza al mismo tiempo, el sistema debe contemplar esta posibilidad.
+
+Los vacunos pertenecientes a una raza, a su vez, poseen diferencias que ameritan clasificarlos de forma tal que sea fácil su gestión y seguimiento. Esta clasificación se lleva adelante utilizando los conceptos de categoría y sub categoría, los cuales permiten clasificar a los vacunos de una misma raza principalmente por su género y edad.
+
+De esta manera, las razas, categorías y sub categorías son características del sistema que pueden ser configuradas de forma independiente. Sin embargo, existe una relación tanto lógica como biológica que llevan a la necesidad de relacionarlas unas con otras. El administrador, puede cargar en el sistema las razas, categorías y sub categorías que sean necesarias. Por último, deben registrarse las relaciones entre ellas indicando aquellas sub categorías que pertenezcan a una categoría y aquellas categorías que pertenezcan a una raza. De esta forma, es de esperarse que un vacuno pertenezca a una única raza y, conforme crece el individuo, puede cambiar de sub categoría estando en una categoría dada. Es posible, también, que el mismo individuo puede cambiar de categoría, alcanzando así las sub categorías de esta última.
+
+Tanto las razas, las categorías como las sub categorías tienen un nombre y una descripción que permiten identificarlas y distinguirlas. Entonces, las funcionalidades implementadas son similares para cualquiera de ellas como así también las pantallas que representan las mismas. A continuación se ilustra la página de categorías (ver \textit{Fig.} \eqref{fig414}), la página de registro de nuevas categorías (ver \textit{Fig.} \eqref{fig415}), la página que muestra las relaciones entre categorías y sub categorías (ver \textit{Fig.} \eqref{fig416}) y la página de registro de nuevas relaciones entre categorías y sub categorías (ver \textit{Fig.} \eqref{fig417}). 
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig414.pdf}}
+\caption{Página principal de categorías.}
+\label{fig414}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig415.pdf}}
+\caption{Formulario de registro de nuevas categorías.}
+\label{fig415}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig416.pdf}}
+\caption{Página principal de relaciones entre categorías y sub categorías.}
+\label{fig416}
+\end{figure}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig417.pdf}}
+\caption{Formulario de registro de relaciones entre categorías y sub categorías.}
+\label{fig417}
+\end{figure}
+
+\newpage
+\subsubsection{Administración de Tipos de Actividades Veterinarias}
+Las actividades veterinarias son aquellas en las que se da atención a los vacunos buscando el bienestar de los mismos. Hoy en día, se encuentran vigentes ciertas prácticas y estándares definidos por el Senasa y el sistema desarrollado en el presente proyecto busca contemplar las mismas. Para ello, es posible configurar las actividades veterinarias que deban llevarse a cabo para poder cumplir con los estándares.
+
+Dentro de las actividades veterinarias que suelen practicarse se encuentran la monta o servicio, la inseminación artificial y el tacto. La eficiencia en la reproducción es uno de los aspectos más críticos de un rodeo. Las pérdidas económicas que se producen como consecuencia de una reproducción retrasada poseen múltiples facetas:
+\begin{itemize}
+\item La vida de la vaca produciendo leche se reduce debido a que el pico de producción de leche no se produce con tanta frecuencia y los períodos de seca se extienden.
+\item El número de terneros nacidos por año decrece, dando menos oportunidades para descartar vacas con baja producción de leche, disminuyendo la posible ganancia genética en el valor genético del rodeo.
+\item El costo directo para el tratamiento de los desordenes reproductivos, servicio y honorarios veterinarios se incrementa.
+\end{itemize}
+
+Ya sea que el productor utilice inseminación artificial o servicio natural, la detección de celo es un componente crítico de un buen manejo reproductivo en la explotación lechera. Cualquiera que sea el caso, el registro de las vacas en celo o fechas de servicio es necesario para predecir celos futuros o fechas de parto y para manejar a las vacas de una manera apropiada.
+
+Por lo expuesto anteriormente es que resulta crucial incluir actividades veterinarias reproductivas al sistema.
+
+%\begin{figure}[tbhp]
+%\centerline{\includegraphics[scale=0.8]{figs/fig120.pdf}}
+%\caption{Página principal de Tipos de Actividades Sanitarias.}
+%\label{fig120}
+%\end{figure}
+%
+%\begin{figure}[tbhp]
+%\centerline{\includegraphics[scale=0.8]{figs/fig121.pdf}}
+%\caption{Formulario de registro de nuevos Tipos de Actividades Sanitarias.}
+%\label{fig121}
+%\end{figure}
+
+\subsubsection{Administración de Clientes y Proveedores}
+Entre las formas mas comunes en las que el número de vacunos puede aumentar o disminuir son la compra y la venta, respectivamente. Las razones por la cual se llega a una compra o venta de bovinos puede variar, pero en la mayoría de los casos se debe a la posibilidad de adquirir nuevos individuos para criarlos, alimentarlos y aumentar sus aptitudes o características para luego venderlos a un precio mayor. Si bien puede que este no sea el principal objetivo, es uno de los mas importantes perseguido por aquellos dedicados a la cría de ganado vacuno.
+
+Es importante, entonces, brindar la posibilidad de administrar tanto clientes como proveedores para que, al momento de realizar una operación de compra o venta de vacunos, sea posible registrar compradores y vendedores. Para ello, al igual que con las demás características de puesta punto y configuración, se cuenta con apartados diseñados específicamente para tal fin.
+%, (\textit{ver Fig.} \ref{fig122}) a (\textit{ver Fig.} \ref{fig125}).
+
+%\begin{figure}[tbhp]
+%\centerline{\includegraphics[scale=0.8]{figs/fig122.pdf}}
+%\caption{Página principal de Clientes.}
+%\label{fig122}
+%\end{figure}
+%
+%\begin{figure}[tbhp]
+%\centerline{\includegraphics[scale=0.8]{figs/fig123.pdf}}
+%\caption{Formulario de registro de nuevos Clientes.}
+%\label{fig123}
+%\end{figure}
+%
+%\begin{figure}[tbhp]
+%\centerline{\includegraphics[scale=0.8]{figs/fig124.pdf}}
+%\caption{Página principal de Proveedores.}
+%\label{fig124}
+%\end{figure}
+%
+%\begin{figure}[tbhp]
+%\centerline{\includegraphics[scale=0.8]{figs/fig125.pdf}}
+%\caption{Formulario de registro de nuevos Proveedores.}
+%\label{fig125}
+%\end{figure}
+
+\subsection{Funcionalidades Operativas}\label{FO}
+Las funcionalidades operativas reflejan los movimientos ocurridos en el día a día de la entidad ganadera. Por citar un ejemplo, si se han comprado animales, a través del módulo de compra se puede registrar dicha operación haciendo uso de las configuraciones expuestas anteriormente (ver \textit{Apartado} \eqref{FAC}).
+
+Los módulos que representan a las funcionalidades operativas cuentan con una estructura común. Esta estructura consta de cuatro páginas. La primera de ellas, y la mas importante, es la que contiene un historial en forma de lista de todos los registros asociados a la operación. Dicha pantalla, cuenta con un barra de búsqueda que permite acceder a la información de manera rápida y sencilla. Por otro lado, también es posible filtrar la información según la fecha de creación o por el usuario que haya ingresado la operación.
+
+Las siguientes dos páginas, la página de creación y de actualización, son similares para cada uno de los módulos. La diferencia entre un módulo u otro radica en la información necesaria para crear o actualizar los registros del mismo. 
+
+Por último, la cuarta pantalla esta destinada a los detalles de una operación. Por cuestiones de espacio y legibilidad, la pantalla principal para cada operación contendrá información reducida con la intención de presentar al usuario aquellos campos que permiten distinguir una operación, de otra. Es así que, al ingresar a la pantalla de detalles, pueden encontrarse la totalidad de los campos que forman parte de la operación.
+
+A continuación, serán descritos los módulos operacionales del software de Gestión y Seguimiento de Trazabilidad de Ganado Vacuno, pudiendo resaltar sus diferencias y objetivos a cumplir.
+
+\subsubsection{Modulo Compras}
+El módulo de compras es aquel que permite al usuario registrar en el sistema el ingreso de nuevos vacunos. Para lograr almacenar una compra es necesario contar con ciertos datos, estos datos son proporcionados por el usuario y siguen una cierta secuencia. A continuación se describe el proceso de creación de una compra.
+
+En primer lugar el usuario debe seleccionar y completar los siguientes datos (ver \textit{Fig.} \eqref{fig418}):
+\begin{itemize}
+\item \textbf{Campo:} en donde los vacunos serán alojados.
+\item \textbf{Número de Factura:} cada compra posee un número de factura.
+\item \textbf{Fecha:} fecha del momento en el cual se haya realizado la compra.
+\item \textbf{Proveedor:} proveedor que haya intervenido en la compra.
+\end{itemize}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig418.pdf}}
+\caption{Datos de la compra.}
+\label{fig418}
+\end{figure}
+
+Toda compra esta conformada por uno o mas artículos y, la compra de vacunos, no es la excepción. Por tanto, lo siguiente es la carga de vacunos a la compra. Para poder agregar ítems a una compra, se deben seleccionar los siguientes datos (ver \textit{Fig.} \eqref{fig419}):
+\begin{itemize}
+\item \textbf{División:} sección del campo en donde estarán situados los vacunos.
+\item \textbf{Raza:} raza a la que pertenecen los vacunos.
+\item \textbf{Categoría:} categoría a la que pertenecen los vacunos. 
+\item \textbf{Sub categoría:} sub categoría a la que pertenecen los vacunos.
+\item \textbf{Cantidad:} total de vacunos.
+\item \textbf{Peso promedio:} utilizado para tener información estimativa del peso de cada individuo.
+\item \textbf{Precio unitario:} precio, por kilo, de un individuo.
+\end{itemize}
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig419.pdf}}
+\caption{Agregar ítem a la compra.}
+\label{fig419}
+\end{figure}
+
+\newpage
+Según lo seleccionado en la \textit{Fig.} \eqref{fig419}, se completa automáticamente una lista de ítems, esta puede observarse en la \textit{Fig.} \eqref{fig420}. Cada fila de la tabla representa un ítem y cada ítem puede ser modificado o eliminado, utilizando las acciones que se encuentran en la columna de acciones, según corresponda.
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig420.pdf}}
+\caption{Ítems a la compra.}
+\label{fig420}
+\end{figure}
+
+A continuación, deben seleccionarse las caravanas que serán utilizadas para identificar a los nuevos vacunos. Cabe destacar que las caravanas que pueden seleccionarse deben estar previamente cargadas en el sistema, a través de las funcionalidades descritas en el \textit{Apartado} \eqref{FAC}. En la \textit{Fig.} \eqref{fig421} se observa una lista con los números de las caravanas disponibles.
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig421.pdf}}
+\caption{Caravanas.}
+\label{fig421}
+\end{figure}
+
+\newpage
+El último campo es el de las observaciones, donde el usuario puede agregar un comentario referente a la operación (ver \textit{Fig.} \eqref{fig422}). Finalmente, el usuario puede cancelar o guardar la compra, para lo cual utiliza los botones implementados para tal fin. 
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig422.pdf}}
+\caption{Observaciones.}
+\label{fig422}
+\end{figure}
+
+\subsubsection{Módulo Cambios de Categorías}
+El módulo de cambios de categoría es el que permite al usuario representar, a nivel sistema, la maduración de un vacuno. Es decir, al igual que ocurre con los humanos, los bovinos tienen su propio ciclo de vida y la forma de indicar que un individuo pasa de una etapa del ciclo a otra, es mediante un cambio de categoría. Al momento de registrar el cambio de categoría, es necesario que el usuario proporcione la siguiente información: 
+\begin{itemize}
+\item \textbf{Campo:} lugar en donde se encuentran los vacunos.
+\item \textbf{División origen:} sección del campo en donde están situados los vacunos.
+\item \textbf{División destino:} sección del campo en donde estarán situados los vacunos al finalizar la operación, pudiendo ser la misma que la de origen.
+\item \textbf{Raza:} raza a la que pertenecen los vacunos.
+\item \textbf{Categoría origen:} categoría a la que pertenecen los vacunos.
+\item \textbf{Sub categoría origen:} sub categoría a la que pertenecen los vacunos.
+\item \textbf{Categoría destino:} categoría a la que pertenecerán los vacunos, pudiendo ser la misma que la de origen.
+\item \textbf{Sub categoría destino:} sub categoría a la que pertenecerán los vacunos, pudiendo ser la misma que la de origen.
+\item \textbf{Fecha:} momento en el cual se haya efectuado el cambio de categoría.
+\item \textbf{Descripción:} el usuario puede agregar un comentario referente a la operación.
+\end{itemize}
+
+Luego de haber ingresado los datos recientemente mencionados, serán listadas las caravanas de aquellos vacunos que cumplan con la configuración ingresada por el usuario. De esta lista de caravanas, el usuario debe seleccionar las correspondientes a los vacunos que forman parte de la operación en cuestión.
+
+Los cambios de categoría tienen la particularidad de que, según la categoría y sub categoría de origen y destino seleccionada, pueden ser catalogados de diferente manera. Un cambio de categoría puede ser:
+\begin{itemize}
+\item \textbf{Simple:} cambio de categoría que no implica agregar o modificar vacunos adicionales. Sólo los vacunos seleccionados serán  actualizados.
+\item \textbf{Aborto:} vaca preñada que pierde la cría.
+\item \textbf{Nacimiento:} vaca que da a luz un ternero. En este caso es necesario registrar el cambio de categoría para la vaca, pasando de \textit{Vaca Preñada} a \textit{Vaca con Cría al Pie}, y registrar nuevos vacunos, \textit{Terneros al Pie}, en el sistema.
+\item \textbf{Destete:} los terneros son separados de la madre para continuar su crianza en base a otra alimentación. Por tanto, se registra el cambio de categoría de la vaca, pasando de \textit{Vaca con Cría al Pie} a \textit{Vaca Vacía}, como del ternero, pasando de \textit{Ternero al Pie} a \textit{Ternero Destete}.
+\end{itemize}
+
+\subsubsection{Módulo Traslados}
+El traslado, suele ser utilizado en momentos en los cuales es necesario situar a los vacunos en un campo distinto. Por ejemplo, en épocas de condiciones meteorológicas desfavorables o de grandes lluvias, es necesario trasladar los animales hacia tierras mas altas buscando salvaguardar la salud de los mismos y sectores con mejores pasturas. De esta forma, se evita que los animales sufran lesiones, pasen hambre o mueran.
+
+Por tanto, es importante brindar la posibilidad de trasladar los vacunos de forma tal que sea posible continuar con el seguimiento y trazabilidad de los mismos. Para registrar un traslado es necesario que el usuario proporcione los siguientes datos:
+\begin{itemize}
+\item \textbf{Campo origen:} lugar en donde se encuentran los vacunos.
+\item \textbf{División origen:} sección del campo en donde están situados los vacunos.
+\item \textbf{Campo destino:} lugar en donde se encontrarán los vacunos. Distinto al de origen.
+\item \textbf{División destino:} sección del campo en donde estarán situados los vacunos, pudiendo ser la misma que la de origen.
+\item \textbf{Raza:} raza a la que pertenecen los vacunos.
+\item \textbf{Categoría:} categoría a la que pertenecen los vacunos. 
+\item \textbf{Sub categoría:} sub categoría a la que pertenecen los vacunos.
+\item \textbf{Fecha:} momento en el cual se haya efectuado el traslado.
+\item \textbf{Descripción:} el usuario puede agregar un comentario referente a la operación.
+\end{itemize}
+
+Luego de haber ingresado los datos recientemente mencionados, serán listadas las caravanas de aquellos vacunos que cumplan con la configuración ingresada por el usuario. De esta lista de caravanas, el usuario debe seleccionar las correspondientes a los vacunos que forman parte de la operación en cuestión.
+
+\subsubsection{Módulo Mortandad}
+Debido a causas climáticas, enfermedades o accidentes, los animales pueden morir. Es fundamental llevar un control de las bajas ocurridas ya que, al tener un registro de ellas, es posible hacer un análisis y determinar un plan de acción para evitar próximas muertes. Para llevar adelante el registro de una mortandad es necesario que el usuario proporcione los siguientes datos:
+
+\begin{itemize}
+\item \textbf{Campo:} lugar en donde se encuentran los vacunos.
+\item \textbf{División:} sección del campo en donde están situados los vacunos.
+\item \textbf{Raza:} raza a la que pertenecen los vacunos.
+\item \textbf{Categoría:} categoría a la que pertenecen los vacunos. 
+\item \textbf{Sub categoría:} sub categoría a la que pertenecen los vacunos.
+\item \textbf{Fecha:} momento en el cual se haya efectuado la o las muertes.
+\item \textbf{Descripción:} el usuario puede agregar un comentario referente a la operación.
+\end{itemize}
+
+Luego de haber ingresado los datos recientemente mencionados, serán listadas las caravanas de aquellos vacunos que cumplan con la configuración ingresada por el usuario. De esta lista de caravanas, el usuario debe seleccionar las correspondientes a los vacunos que forman parte de la operación en cuestión.
+
+\newpage
+\subsubsection{Módulo Actividades Veterinarias}
+El módulo de actividades veterinarias permite llevar un registro de las diversas acciones llevadas a cabo en lo que respecta a atenciones médicas para con los vacunos. Las mismas se realizan de forma tal de cumplimentar con las normas y estándares definidos por el Senasa, procurando salvaguardar la salud de los bovinos. Para llevar un registro de las diversas actividades sanitarias realizadas es necesario que el usuario proporcione los siguientes datos:
+\begin{itemize}
+\item \textbf{Campo:} lugar en donde se encuentran los vacunos.
+\item \textbf{División:} partición del campo en donde están situados los vacunos.
+\item \textbf{Raza:} raza a la que pertenecen los vacunos.
+\item \textbf{Categoría:} categoría a la que pertenecen los vacunos. 
+\item \textbf{Sub categoría:} sub categoría a la que pertenecen los vacunos.
+\item \textbf{Tipo de actividad:} existen diversas actividades sanitarias que deben ser realizadas ya sea de forma periódica o paulatina. Por tanto el usuario debe indicar cuál de todas ellas es la que se esta queriendo registrar en el sistema.
+\item \textbf{Fecha:} momento en el cual se haya efectuado la actividad veterinaria.
+\item \textbf{Descripción:} el usuario puede agregar un comentario referente a la operación.
+\end{itemize}
+
+Luego de haber ingresado los datos recientemente mencionados, serán listadas las caravanas de aquellos vacunos que cumplan con la configuración ingresada por el usuario. De esta lista de caravanas, el usuario debe seleccionar las correspondientes a los vacunos que forman parte de la operación en cuestión.
+
+En aquellos casos en los que, el tipo de actividad veterinaria seleccionada este relacionado con aspectos reproductivos, tales como la detección de celo o detección de vacas preñadas, es generado un evento dentro del sistema. Dicho evento, emite notificaciones pertinentes a través de correo electrónico, tanto al momento de su creación como así también al acercarse la fecha de cumplimiento de dicho evento.
+
+\subsubsection{Módulo Ventas}
+Otra forma de disminuir la cantidad de individuos en un campo dado, es a través de una venta. El módulo de ventas permite registrar en el sistema el egreso de vacunos. Para llevar adelante el registro de una venta es necesario que el usuario proporcione los siguientes datos:
+\begin{itemize}
+\item \textbf{Cliente:} cliente que haya intervenido en la venta.
+\item \textbf{Número de Factura:} cada venta posee un número de factura. 
+\item \textbf{Fecha:} fecha del momento en el cual se haya realizado la venta.
+\item \textbf{Precio unitario:} precio, por kilo, de un individuo.
+\item \textbf{Campo:} lugar en donde se encuentran los vacunos.
+\item \textbf{División:} sección del campo en donde están situados los vacunos.
+\item \textbf{Raza:} raza a la que pertenecen los vacunos.
+\item \textbf{Categoría:} categoría a la que pertenecen los vacunos. 
+\item \textbf{Sub categoría:} sub categoría a la que pertenecen los vacunos.
+\item \textbf{Cantidad:} total de vacunos.
+\item \textbf{Descripción:} el usuario puede agregar un comentario referente a la operación.
+\end{itemize}
+
+Luego de haber ingresado los datos recientemente mencionados, serán listadas las caravanas de aquellos vacunos que cumplan con la configuración ingresada por el usuario. De esta lista de caravanas, el usuario debe seleccionar las correspondientes a los vacunos que forman parte de la operación en cuestión.
+
+\subsection{Reportes}\label{Rep}
+Los reportes son una visualización de la información existente en la base de datos o información que se va generando a medida que se trabaja con el sistema. Dicha información estará dispuesta en forma de planilla y los datos contenidos en el reporte dependerán de lo que se haya solicitado visualizar.
+
+El procedimiento para generar reportes es cómodo y rápido. Aquellos usuarios con perfil \textit{Administrador}, \textit{Encargado en Jefe} y \textit{Veterinario en Jefe}, podrán acceder a los reportes desde la última opción del menú. Ingresando a la página de reportes, es posible solicitar reportes acerca de \textit{Usuarios}, \textit{Vacunos} y \textit{Operaciones}. En la \textit{Fig.} \eqref{fig423} puede verse la página principal de reportes.
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig423.pdf}}
+\caption{Reportes.}
+\label{fig423}
+\end{figure}
+
+Los reportes generados pueden ser exportados a una planilla de cálculo con formato \textit{.xlsx} o bien a formato portable \textit{.pdf}. A continuación se realiza una breve descripción de los diversos reportes que pueden generarse.
+
+\newpage
+\subsubsection{Reporte de Usuarios}
+El reporte de usuarios puede hacerse por perfil o por campo. En caso de seleccionar el filtro por perfil, es necesario seleccionar el perfil que se desea visualizar. De este modo se puede obtener una lista de usuarios que contengan dicho perfil, como se muestra en la \textit{Fig.} \eqref{fig424}.
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig424.pdf}}
+\caption{Reporte de usuarios por perfil.}
+\label{fig424}
+\end{figure}
+
+Por otro lado, el filtro por campo, implica la selección de un campo y el informe resultante contendrá a los usuarios asociados a dicho campo. Este informe puede verse en la \textit{Fig.} \eqref{fig425}
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig425.pdf}}
+\caption{Reporte de usuarios por campo.}
+\label{fig425}
+\end{figure}
+
+\newpage
+\subsubsection{Reporte de Vacunos}
+El reporte se vacunos es un informe que contiene todos los vacunos que cumplen con los filtros seleccionados por el usuario. Por tanto, es necesario que el usuario seleccione un campo, división, raza, categoría y sub categoría. En la \textit{Fig.} \eqref{fig426} puede observarse un ejemplo de reporte de vacunos.
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig426.pdf}}
+\caption{Reporte de usuarios por campo.}
+\label{fig426}
+\end{figure}
+
+\subsubsection{Reporte de Operaciones}
+El reporte de operaciones contiene todos los registros almacenados en la base de datos. Para solicitar un reporte de operación es necesario indicar el tipo de operación, campo, quien haya registrado la operación, fecha desde y fecha hasta.
+
+El único parámetro obligatorio es el tipo de operación, de esta manera el resto de los parámetros pueden no tenerse en cuenta y la información solicitada no contemplará los mismos. Los parámetros fecha desde y fecha hasta pueden filtrar la información de forma tal que la fecha de carga de cada operación ente comprendida en dicho rango de fechas. En la \textit{Fig.} \eqref{fig427} se ilustra un ejemplo de reporte de operaciones.
+
+\begin{figure}[tbhp]
+\centerline{\includegraphics[scale=0.87]{figs/capitulo_3_desarrollo/fig427.pdf}}
+\caption{Reporte de usuarios por campo.}
+\label{fig427}
+\end{figure}
+
+\newpage
+\section{Resultados}
+Luego de haber realizado las actividades correspondientes al desarrollo del presente Proyecto Final de Carrera, se pueden realizar algunas observaciones respecto a los objetivos y requerimientos propuestos, como así también sobre modificaciones que han sido necesarias realizar para lograr los resultados obtenidos.
+
+\subsection{Objetivos y Alcance}
+En base a los objetivos y alcance definidos en la \textit{Propuesta de Proyecto Final de Carrera}, se pueden realizar las siguientes observaciones:
+\begin{itemize}
+\item Se diseñó y desarrollo un sistema web para la gestión y seguimiento de trazabilidad de ganado vacuno. El software es una herramienta pensada para facilitar el trabajo de la cría y producción de ganado vacuno, brindando funcionalidades y características que permiten representar las actividades de campo de una manera fácil y sencilla. Permitiéndole al productor asegurar el bienestar y calidad de los vacunos. Para tal fin ha sido necesario tomar contacto con el dominio en cuestión para aprender la lógica de negocio asociada y poder diseñar un sistema capaz de reflejar el trabajo diario con los animales.
+\item Se implementaron funcionalidades administrativas y de configuración mediante las cuales es posible adaptar el sistema a las necesidades del cliente. De esta manera, el sistema esta preparado para solventar cambios que deban ser establecidos para poder asegurar el cumplimiento del objetivo para el cual ha sido pensado.
+\newpage
+\item Se implementaron las funcionalidades operativas, aquellas que permiten llevar un registro de todas las actividades que intervienen en la cría y producción del ganado.
+\item La información generada y almacenada en la base de datos del sistema tiene un gran valor. Por tanto, se implementaron funcionalidades que permiten generar reportes con la información deseada, los mismos pueden ser exportados a archivos para un posterior análisis.
+\end{itemize}
+
+\subsection{Requerimientos}
+El desarrollo del sistema se llevo a cabo respetando los requerimientos definidos en la primer etapa del proyecto. Sin embargo, ha sido necesario considerar algunas modificaciones sobre algunos de ellos. A saber:
+\begin{itemize}
+\item \textit{\textbf{RF02 - Perfiles de Usuario:} en una primera instancia se plantearon $3$ perfiles de usuario (administrador, veterinario y peón). Durante el desarrollo del sistema ha surgido la necesidad de contar con perfiles un poco mas definidos y específicos, dando lugar a los perfiles mencionados en la \textit{Administración de Usuarios} (ver \textit{Apartado} \eqref{FAC})}.
+\item \textit{\textbf{RF07 - Registro de Vacunos:} el ingreso de vacunos al sistema se realiza, principalmente, a través de una operación de compra. A partir de la misma, es posible asignar una caravana a cada individuo (permitiendo identificarlo y distinguirlo del resto), como así también definir su raza, categoría, sub categoría y peso promedio. En caso de ser necesario, información adicional puede ser cargada accediento a los detalles de cada individuo.}
+\item \textit{\textbf{RNF06 - Seguridad externa (Safety)}: a continuación se listan algunas de las funciones proporcionadas por Laravel, que han sido utilizadas para dar seguridad a la aplicación:
+\begin{itemize}
+\item Sistema de autenticación: el sistema de autenticación utiliza ``providers'' y ``guards'' para facilitar la tarea. Con Guards se puede controlar cómo se autenticarán los usuarios para cada solicitud realizada mientras que los Providers permiten recuperar usuarios de la base de datos. Por tanto, solo resta configurar la base de datos, los controladores y los modelos relacionados con el usuario para completar la autenticación.
+\item Protección contra Inyección SQL: el ORM Eloquent en Laravel utiliza el enlace de parámetros PDO para luchar contra la inyección SQL. Este tipo de enlace de parámetros garantiza que los datos pasados por parte del usuario no se utilicen en forma directa en las consultas SQL. Evitando así que la consulta de un usuario malintencionado pueda provocar el robo de datos sensibles y otras consecuencias graves.
+\item Protección contra CSRF (Cross Site Request Forgery) o falsificación de solicitud entre sitios: cuando un usuario ya autenticado visita otro sitio que posee un enlace malicioso que envía una solicitud a la ruta de su aplicación, su back-end solo sabe que se trata de una solicitud de un usuario autenticado. Sin embargo, el atacante controlará los datos enviados junto con la solicitud. Laravel, usa tokens CSRF para restringir que terceros generen dichas solicitudes falsificadas. Esto se hace utilizando un token válido que debe agregarse en cada solicitud. Luego, Laravel compara este token automáticamente con el valor que ha guardado. En caso de que el token no coincida con el almacenado, se considera que esa solicitud en particular no es válida, de lo contrario, esa solicitud es válida.
+\item Protección contra XSS (Cross Site Scripting): los ataques XSS tienen lugar al momento en que un usuario usa campos de entrada para agregar código JavaScript. De esta forma, cada vez que los usuarios abran esa página, también se ejecutará este código JavaScript específico, que puede ser malicioso. Para solventar esto, Laravel realiza un escape automático al guardar contenido en la base de datos y también al imprimir contenido en HTML.
+\end{itemize}}
+\item \textit{\textbf{RNF09 - Diseño Escalable y Mantenible:} gracias a la modularización del sistema es posible escalar y mantener el mismo. Las funcionalidades administrativas y de configuración (ver apartado \eqref{FAC}) permiten adaptar el sistema a nuevos cambios. Por otro lado, si lo que se necesita es adicionar una nueva funcionalidad operativa, la misma puede añadirse al sistema sin dañar las ya existentes.}
+\end{itemize}
+
+\subsection{Interfaz Gráfica de Usuario}
+En lo referente a la interfaz gráfica de usuario, se han respetado los principios de diseño definidos en la segunda etapa del proyecto. Sin embargo, cave destacar que se ha utilizado una herramienta adicional que previamente no había sido seleccionada. Esta herramienta es \textbf{VueJS}, un framework JavaScript progresivo para construir interfaces de usuario. A diferencia de otros frameworks, Vue está diseñado desde el inicio para ser adoptado incrementalmente. Por otro lado, Vue también es perfectamente capaz de soportar aplicaciones sofisticadas utilizado en combinación con herramientas modernas y librerías compatibles.
+
+El núcleo de VueJS está formado por una librería encargada de renderizar vistas en el navegador. Su forma de organizar el código es por medio de pequeños componentes que contienen todo el HTML, CSS y JavaScript necesario para funcionar como pieza independiente. Estas piezas se van componiendo en un árbol jerárquico de componentes hasta formar la aplicación.
+
+Pero, ¿por qué elegir Vue.js?
+\begin{itemize}
+\item \textbf{Framework MVVM:} la ventaja de este tipo de frameworks es la facilidad para construir codigo bien estructurado, permitiendo construir aplicaciones complejas.
+\item \textbf{Solución ligera:} una de las grandes ventajas de Vue es el tamaño del núcleo. Este tamaño puede ir aumentando, debido a la flexibilidad y facilidad para extender el framework con variedad de soluciones de terceros que son bien recibidas por la comunidad. Su tamaño compactado reduce los tiempos de carga y velocidad de las aplicaciones.
+\item \textbf{Templates declarativos:} los templates en Vue se escriben en HTML fácilmente modificable por cualquier involucrado en el proyecto.
+\item \textbf{DOM virtual:} la implementación del DOM Virtual proporciona un alto performance que ponen a Vue como líder en rendimiento de renderizado.
+\item \textbf{Two-way Data Binding:} al igual que otros framworks, emplea un data-binding bidireccional que sincroniza automáticamente el modelo con el DOM.
+\newpage
+\item \textbf{Curva de aprendizaje baja:} comparado con otros frameworks, Vue es una de las tecnologías JavaScript más sencillas para comenzar a desarrollar. Una de las mejores características es que se trata de un framework ``\textit{friendly developer}''. Además posee una excelente documentación.
+\end{itemize}
+
+De esta manera, al emplear los beneficios de Vue en conjunto con \textit{Bootstap}, herramienta previamente seleccionada, se ha logrado una interfaz gráfica de usuario limpia, sencilla y de gran rendimiento, haciendo posible una experiencia de usuario satisfactoria.
 
 \chapter{Pruebas}
 
@@ -871,29 +1434,31 @@ En la Fig. \eqref{fig204} se muestra la pantalla de \textit{Inicio de Sesión} m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% APÉNDICE DE CASOS DE USO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \newpage
-\section{Apéndice - Casos de Uso}\label{Ap}
+\chapter{Apéndice - Casos de Uso}
+
+\section{Casos de Uso}\label{Ap}
 
 \subsection{Diagramas de Casos de Uso}\label{ApDCU}
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.5]{figs/Diagrama_CU_Administrador.pdf}}
+\centerline{\includegraphics[scale=0.5]{figs/capitulo_2_disenio/Diagrama_CU_Administrador.pdf}}
 \caption{Diagrama de Casos de Uso del Actor \textbf{Administrador}.}
 \label{Ap101}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.5]{figs/Diagrama_CU_Encargado.pdf}}
+\centerline{\includegraphics[scale=0.5]{figs/capitulo_2_disenio/Diagrama_CU_Encargado.pdf}}
 \caption{Diagrama de Casos de Uso del Actor \textbf{Encargado} - Parte 1.}
 \label{Ap102}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.5]{figs/Diagrama_CU_Restantes.pdf}}
+\centerline{\includegraphics[scale=0.5]{figs/capitulo_2_disenio/Diagrama_CU_Restantes.pdf}}
 \caption{Diagrama de Casos de Uso del Actor \textbf{Encargado} - Parte 2.}
 \label{Ap103}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.5]{figs/Diagrama_CU_Veterinario.pdf}}
+\centerline{\includegraphics[scale=0.5]{figs/capitulo_2_disenio/Diagrama_CU_Veterinario.pdf}}
 \caption{Diagrama de Casos de Uso del Actor \textbf{Veterinario}.}
 \label{Ap104}
 \end{figure}
@@ -903,295 +1468,295 @@ En la Fig. \eqref{fig204} se muestra la pantalla de \textit{Inicio de Sesión} m
 \subsection{Fichas Textuales de Casos de Uso}\label{ApFCU}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0001.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0001.pdf}}
 \caption{CU01: Ingresar al Sistema.}
 \label{Ap201}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0002.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0002.pdf}}
 \caption{CU02: Recuperar Contraseña.}
 \label{Ap202}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0003.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0003.pdf}}
 \caption{CU03: Registrar Usuario.}
 \label{Ap203}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0004.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0004.pdf}}
 \caption{CU04: Consultar Campo.}
 \label{Ap204}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0005.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0005.pdf}}
 \caption{CU05: Consultar Perfil.}
 \label{Ap205}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0006.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0006.pdf}}
 \caption{CU06: Modificar Usuario.}
 \label{Ap206}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0007.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0007.pdf}}
 \caption{CU07: Eliminar Usuario.}
 \label{Ap207}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0008.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0008.pdf}}
 \caption{CU08: Consultar Usuario.}
 \label{Ap208}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0009.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0009.pdf}}
 \caption{CU09: Registrar Campo.}
 \label{Ap209}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0010.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0010.pdf}}
 \caption{CU10: Dividir Campo.}
 \label{Ap210}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0011.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0011.pdf}}
 \caption{CU11: Modificar Campo.}
 \label{Ap211}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0012.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0012.pdf}}
 \caption{CU12: Eliminar Campo.}
 \label{Ap212}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0013.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0013.pdf}}
 \caption{CU13: Registrar Raza.}
 \label{Ap213}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0014.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0014.pdf}}
 \caption{CU14: Modificar Raza.}
 \label{Ap214}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0015.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0015.pdf}}
 \caption{CU15: Eliminar Raza.}
 \label{Ap215}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0016.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0016.pdf}}
 \caption{CU16: Consultar Raza.}
 \label{Ap216}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0017.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0017.pdf}}
 \caption{CU17: Registrar Operación.}
 \label{Ap217}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0018.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0018.pdf}}
 \caption{CU18: Registrar Compra.}
 \label{Ap218}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0019.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0019.pdf}}
 \caption{CU19: Registrar Cambio de Categoría.}
 \label{Ap219}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0020.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0020.pdf}}
 \caption{CU20: Registrar Traslado.}
 \label{Ap220}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0021.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0021.pdf}}
 \caption{CU21: Registrar Venta.}
 \label{Ap221}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0022.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0022.pdf}}
 \caption{CU22: Registrar Mortandad.}
 \label{Ap222}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0023.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0023.pdf}}
 \caption{CU23: Registrar Nacimiento.}
 \label{Ap223}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0024.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0024.pdf}}
 \caption{CU24: Generar Reporte.}
 \label{Ap224}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0025.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0025.pdf}}
 \caption{CU25: Reporte de Actividad.}
 \label{Ap225}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0026.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0026.pdf}}
 \caption{CU26: Reporte de Operación.}
 \label{Ap226}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0027.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0027.pdf}}
 \caption{CU27: Reporte de Stock.}
 \label{Ap227}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0028.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0028.pdf}}
 \caption{CU28: Consultar Actividad.}
 \label{Ap228}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0029.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0029.pdf}}
 \caption{CU29: Consultar Operación.}
 \label{Ap229}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0030.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0030.pdf}}
 \caption{CU30: Consultar Stock.}
 \label{Ap230}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0031.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0031.pdf}}
 \caption{CU31: Registrar Actividad.}
 \label{Ap231}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0032.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0032.pdf}}
 \caption{CU32: Modificar Actividad.}
 \label{Ap232}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0033.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0033.pdf}}
 \caption{CU33: Eliminar Actividad.}
 \label{Ap233}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0034.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0034.pdf}}
 \caption{CU34: Registrar Evento.}
 \label{Ap234}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0035.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0035.pdf}}
 \caption{CU35: Notificar Evento.}
 \label{Ap235}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0036.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0036.pdf}}
 \caption{CU36: Modificar Compra.}
 \label{Ap236}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0037.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0037.pdf}}
 \caption{CU37: Consultar Compra.}
 \label{Ap237}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0038.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0038.pdf}}
 \caption{CU38: Eliminar Compra.}
 \label{Ap238}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0039.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0039.pdf}}
 \caption{CU39: Modificar Cambio de Categoria.}
 \label{Ap239}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0040.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0040.pdf}}
 \caption{CU40: Consultar Cambio de Categoria.}
 \label{Ap240}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0041.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0041.pdf}}
 \caption{CU41: Eliminar Cambio de Categoria.}
 \label{Ap241}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0042.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0042.pdf}}
 \caption{CU42: Modificar Traslado.}
 \label{Ap242}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0043.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0043.pdf}}
 \caption{CU43: Consultar Traslado.}
 \label{Ap243}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0044.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0044.pdf}}
 \caption{CU44: Eliminar Traslado.}
 \label{Ap244}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0045.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0045.pdf}}
 \caption{CU45: Modificar Venta.}
 \label{Ap245}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0046.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0046.pdf}}
 \caption{CU46: Consultar Venta.}
 \label{Ap246}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0047.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0047.pdf}}
 \caption{CU47: Eliminar Venta.}
 \label{Ap247}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0048.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0048.pdf}}
 \caption{CU48: Modificar Mortandad.}
 \label{Ap248}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0049.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0049.pdf}}
 \caption{CU49: Consultar Mortandad.}
 \label{Ap249}
 \end{figure}
@@ -1199,73 +1764,73 @@ En la Fig. \eqref{fig204} se muestra la pantalla de \textit{Inicio de Sesión} m
 \newpage
 \clearpage
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0050.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0050.pdf}}
 \caption{CU50: Eliminar Mortandad.}
 \label{Ap250}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0051.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0051.pdf}}
 \caption{CU51: Modificar Nacimiento.}
 \label{Ap251}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0052.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0052.pdf}}
 \caption{CU52: Consultar Nacimiento.}
 \label{Ap252}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0053.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0053.pdf}}
 \caption{CU53: Eliminar Nacimiento.}
 \label{Ap253}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0054.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0054.pdf}}
 \caption{CU54: Registrar Aborto.}
 \label{Ap254}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0055.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0055.pdf}}
 \caption{CU55: Modificar Aborto.}
 \label{Ap255}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0056.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0056.pdf}}
 \caption{CU56: Consultar Aborto.}
 \label{Ap256}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0057.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0057.pdf}}
 \caption{CU57: Eliminar Aborto.}
 \label{Ap257}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0058.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0058.pdf}}
 \caption{CU58: Registrar Destete.}
 \label{Ap258}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0059.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0059.pdf}}
 \caption{CU59: Modificar Destete.}
 \label{Ap259}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0060.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0060.pdf}}
 \caption{CU60: Consultar Destete.}
 \label{Ap260}
 \end{figure}
 
 \begin{figure}[tbhp]
-\centerline{\includegraphics[scale=0.6]{Fichas_CU/pg_0061.pdf}}
+\centerline{\includegraphics[scale=0.6]{figs/capitulo_2_disenio/fichas_cu/pg_0061.pdf}}
 \caption{CU61: Eliminar Destete.}
 \label{Ap261}
 \end{figure}
