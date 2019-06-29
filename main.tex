@@ -1,0 +1,237 @@
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO DE LAS CONFIGURACIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\documentclass[11pt,oneside]{book}
+\usepackage{geometry}								% dimensiones del documento
+	\geometry{
+		a4paper,									% tipo de página
+		left = 25mm,								% margen izquierdo
+		right = 20mm,								% margen derecho
+		top = 25mm,									% margen superior
+		bottom = 15mm								% margen inferior
+	}
+\usepackage[utf8]{inputenc}							% caracteres especiales
+\usepackage[T1]{fontenc}							% permite realizar cambios al formato de separación en sílabas
+\usepackage[spanish,es-tabla]{babel} 				% para ajustar algunas cuestiones como cuadro/tabla dependientes del idioma
+\usepackage{enumerate}								% para ajustes de viñetas y esquemas numerados
+\usepackage{helvet}									% para ajustar la tipografía a una similar a Arial
+\usepackage{fancyhdr}								% para ajuste de encabezado y pie de página
+\usepackage[usenames,table,xcdraw]{xcolor}			% color en documento y tablas
+\usepackage{graphicx}								% para ajuste de texto en tablas
+\usepackage{parskip}								% para quitar la sangría de párrafos
+\usepackage{setspace}								% para ajustar el interlineado
+\usepackage[autostyle]{csquotes}					% para realizar y mostrar citas 'inline'
+\usepackage{amsmath}								% para poder utilizar ecuaciones en diferentes entornos, por ejemplo, listas numeradas y viñetas
+\usepackage[T1,hyphens]{url}						% para separar en más de una línea URLs muy largas
+\usepackage[colorlinks=true,
+            linkcolor=bunl,
+            urlcolor=bunl,
+            citecolor=bunl]{hyperref}				% para links en color
+\usepackage{titlesec}								% para formatear secciones, subsecciones, etc.
+\usepackage{enumitem}								% para modificar la identación de listas numeradas
+\usepackage{tocloft}								% para ajustar la posición en la página de la tabla de contenidos	
+\usepackage{pdflscape}
+\usepackage{multicol}
+
+\usepackage{listings}								% para agregar código de programación al documento
+% ******* PARÁMETROS DE CONFIGURACIÓN PARA ALGORITMOS ******
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ 
+	language=php,	
+	breaklines=true,	
+	frame=none,
+	escapeinside={\%*}{*){Ó}},
+	basicstyle=\footnotesize,
+	keywordstyle=\textcolor{blue},
+	numberstyle=\color{mygray},
+	commentstyle=\color{mygreen},
+	numbers=left,
+	numbersep=4pt,
+	stringstyle=\color{mymauve},
+	showstringspaces=false,
+	inputencoding=utf8
+	%    backgroundcolor=\color{gray!10},
+%    frame=single,
+%    tabsize=2,
+%    rulecolor=\color{black!30},
+%    title=\lstname,
+%    escapeinside={\%*}{*)},
+%
+%    breakatwhitespace=true,
+%    framextopmargin=2pt,
+%    framexbottommargin=2pt,
+%    extendedchars=false,
+%    inputencoding=utf8
+}
+
+% ******* FIN DE CONFIGURACIÓN DE ALGORITMOS ******
+%\usepackage[spanish]{algorithm2e}
+
+\hyphenation{bie-nes-tar}							%ajuste de palabras en silabas
+
+% ajuste de la tipografía a una similar a Arial
+\renewcommand{\familydefault}{\sfdefault}
+
+% Para que no aparezca la numeración del capítulo en el número de la subsección
+\renewcommand*\thesection{\arabic{section}}
+
+% ajuste de la profundidad para numeración de secciones, subsecciones, etc.
+\setcounter{secnumdepth}{4}		% en el documento
+\setcounter{tocdepth}{3}		% en la tabla de contenidos
+
+% formato de secciones
+\titleformat{\section}{\normalfont\fontsize{12}{14}\bfseries}{\thesection.}{1 em}{}
+\titlespacing*{\section}{0pt}{6mm}{4mm}
+
+% formato de subsecciones
+\titleformat{\subsection}{\normalfont\fontsize{12}{14}\bfseries}{\thesubsection.}{1 em}{}
+\titlespacing*{\subsection}{0pt}{2mm}{1mm}
+
+% formato de subsubsecciones
+\titleformat{\subsubsection}{\normalfont\fontsize{11}{13}\bfseries}{\thesubsubsection.}{1 em}{}
+%\titlespacing*{\subsection}{0pt}{-1mm}{-1mm}
+
+% ajuste de encabezado y pie de página
+\pagestyle{fancy}									% activa el estilo de encabezado y pie de página
+\fancyhead{}										% borra el formato del encabezado
+\renewcommand{\headrulewidth}{0pt}					% quita la barra horizontal del encabezado
+\fancyfoot{}										% borra el formato del pie de página
+\fancyfoot[R]{\fontsize{8}{10}\thepage}				% numeración en el borde inferior derecho
+
+% definición de colores personalizados
+\definecolor{b}{rgb}{0.3,0.3,1}						% color azul definido por mí (no es azul puro...tiene un toque de rojo y verde)
+\definecolor{bunl}{rgb}{0,0.4941,0.6392}			% color azul institucional de UNL
+\definecolor{w}{rgb}{1,1,1}							% color blanco
+\definecolor{k}{rgb}{0,0,0}							% color negro
+\definecolor{r}{rgb}{1,0,0}							% color rojo
+\definecolor{g}{rgb}{0.3,1,0.3}						% color verde definido por mí (no es verde puro...tiene un toque de rojo y azul)
+
+% para texto en monospace color azul
+\newcommand\ff[1]{{\scshape\color{bunl}#1}}
+
+% para cambiar a tipo de letra bash o shell
+\newcommand*{\mf}{\fontfamily{cmtt}\selectfont}
+
+% defaults para niveles de viñetas
+\renewcommand\labelitemi{$\bullet$}	% 1er. nivel - diamante (diamond)
+\renewcommand\labelitemii{$\bullet$}		% 2do. nivel - círculo relleno (bullet)
+\renewcommand\labelitemiii{$\circ$}		% 3er. nivel - círculo (circle)
+\renewcommand\labelitemiv{$-$}			% 4to. nivel - guión (símbolo menos)
+
+% separación entre items
+\setlist[1]{itemsep=-4 pt}
+\setlist[2]{itemsep=-8 pt}
+\setlist[3]{itemsep=-12 pt}
+
+% Para evitar los warnings por overfull y underfull hbox y vbox
+\hfuzz=20pt
+\vfuzz=20pt
+\hbadness=10000
+\vbadness=\maxdimen
+
+% para corregir la separación en sílabas de algunas palabras en particular
+\hyphenation{mé-to-dos}
+
+%Cosas para Rieso
+\usepackage{tcolorbox}
+\newtcolorbox{mybox}{colback=color_riesgo,colframe=colriesgo,arc=0mm,boxrule=0.2mm}
+\definecolor{color_riesgo}{RGB}{154,175,194} %fondo
+\definecolor{colriesgo}{RGB}{26,51,0} %Recuadro y letra del nombre
+
+\usepackage{multirow, array}
+
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIN DE LAS CONFIGURACIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TÍTULO Y ENCABEZADO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+% ajuste del interlineado a 2 líneas para el título
+\doublespacing
+\begin{center}
+\LARGE Diseño y Desarrollo de un Software de Gestión y Seguimiento de Trazabilidad de Ganado Vacuno
+\end{center}
+
+\vspace{0.25cm}
+\begin{center}
+\rule{\textwidth}{.4pt}
+\end{center}
+\vspace{0.25cm}
+
+% ajuste del interlineado a 0.95 líneas para la sección de autor
+\spacing{0.95}
+
+\textbf{Autor:} Mario A. Rosales (mariorosales941@gmail.com)
+
+\textbf{Director:} Ing. Lucila Romero (lucila.rb@gmail.com)
+
+%\textbf{Co-Director:} 
+
+\textbf{Asesor Temático:}
+\begin{itemize}
+\item Ing. Agrónomo Jorge Cinquini
+\item Med. Veterinario Juan Carlos Garcia
+\end{itemize}
+
+\begin{center}
+\rule{\textwidth}{.4pt}
+\end{center}
+\vspace{3.5mm}
+
+\begin{center}
+\textbf{\Large Informe Final}
+\end{center}
+
+\begin{center}
+\rule{\textwidth}{.4pt}
+\end{center}
+% ajuste del interlineado para el resto del documento
+\spacing{1.15}
+
+% ajuste de la separación entre párrafos
+\setlength{\parskip}{5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESUMEN Y PALABRAS CLAVE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TABLA DE CONTENIDOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\newpage
+% quita el espacio antes del margen superior en la tabla de contenidos
+\setlength{\cftbeforetoctitleskip}{0pt}			
+
+% para ajustar la fuente del título de la tabla de contenidos
+\renewcommand{\cfttoctitlefont}{\Large\bfseries}	
+\tableofcontents
+
+\clearpage
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIN DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% APÉNDICE DE CASOS DE USO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+%\newpage
+%\section{Apéndice - Casos de Uso}\label{Ap}
+%
+%\subsection{Diagramas de Casos de Uso}\label{ApDCU}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BIBLIOGRAFÍA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand{\bibname}{\vspace{-2.5cm}\large{BIBLIOGRAFÍA}\vspace{-0.5cm}}
+%\nocite{*}
+%\bibliographystyle{documento}
+%\fancypagestyle{plain}{%
+%\fancyhf{}
+%\fancyfoot[R]{\thepage}}
+%\bibliography{documento}
+%\addcontentsline{toc}{section}{\hspace{0.36cm}BIBLIOGRAFÍA}
+\end{document}
