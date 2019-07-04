@@ -488,24 +488,17 @@ Un framework es una estructura de software creada para ayudar en el desarrollo. 
 Por estos motivos es que se ha decidido utilizar un framework para el desarrollo de este proyecto. Los criterios de aceptación para la selección del mismo son los siguientes:
 \begin{itemize}
 \item \textit{\textbf{Programación Orientación a Objetos}}: \textit{debe permitir y facilitar la utilización de este paradigma.}
-
 \item \textit{\textbf{Patrón de diseño MVC}}: \textit{debe permitir la utilización de este patrón de diseño.}
-
 \item \textit{\textbf{Bases de datos relacionales}}: \textit{debe facilitar la utilización de bases de datos relacionales.}
 \end{itemize}
 
 Hasta aquí, hemos definido el lenguaje de programación back-end (PHP) y se han mencionado las ventajas de utilizar un framework. Pero aún queda por definir, entre otras cosas, cuál de todos los frameworks PHP existentes se va a utilizar. Pero, \textit{¿Por qué elegir un framework PHP?}. Algunos de los beneficios de utilizar un framework PHP son:
 \begin{itemize}
 \item \textit{Un framework PHP hace que el desarrollo sea más rápido. Por ejemplo, no es necesario escribir consultas complejas para recuperar información almacenada en la base de datos debido a que proporcionan operaciones CRUD (Create, Read, Update and Delete o Crear, Leer, Actualizar y Eliminar).}
-
 \item \textit{Los framework permiten a los desarrolladores escalar sistemas fácilmente.}
-
 \item \textit{El mantenimiento de código es más fácil que con una aplicación desarrollada en PHP puro. El código de la aplicación es conciso y fácil de usar.}
-
 \item \textit{El modelo MVC asegura un desarrollo rápido.}
-
 \item \textit{Los framework son mejores para proteger la aplicación web de amenazas de seguridad comunes.}
-
 \item \textit{El principio DRY (Don't Repeat Yourself o Una vez y sólo una) garantiza que el mínimo código tenga un máximo impacto.}
 \end{itemize}
 
@@ -521,63 +514,63 @@ En la actualidad, existe una amplia gama de framework PHP disponibles. Decidir c
 \item \textit{¿El framework tiene un fuerte apoyo comunitario?.}
 \end{itemize}
 
+\newpage
 Dentro de los frameworks que cumplen con los criterios anteriores se han analizado los siguientes: Symfony, Laravel y Yii. Los tres frameworks son buenas opciones para construir aplicaciones web, pero cada uno tiene un propósito diferente. Se ha realizado una comparativa de sus características, ventajas y desventajas con el fin de elegir el que mejor se ajuste a las necesidades de este proyecto.
 
 \textbf{Symfony} \footnote{\textbf{Symfony}. \url{https://symfony.com/what-is-symfony}.}
 
-Es un framework Open Source diseñado para optimizar el desarrollo de las aplicaciones web basándose en el patrón de diseño MVC (Modelo Vista Controlador). Separa la lógica de negocio, la lógica de servidor y la presentación de la aplicación web generando así, código fácil de leer, lo que permite un sencillo mantenimiento. Proporciona varias herramientas y clases encaminadas a reducir el tiempo de desarrollo de un sistema. Además, automatiza las tareas más comunes, permitiendo al desarrollador dedicarse por completo a los aspectos específicos de cada aplicación. Utiliza programación orienteda a objetos y es compatible con la mayoría de gestores de bases de datos, como MySQL, PostgreSQL, Oracle y Microsoft SQL Server. Se puede ejecutar tanto en plataformas basadas en Unix como en plataformas Windows.
+Es un framework Open Source diseñado para optimizar el desarrollo de las aplicaciones web basándose en el patrón de diseño MVC (Modelo Vista Controlador). Separa la lógica de negocio, la lógica de servidor y la presentación de la aplicación web generando así, código fácil de leer, permitiendo un sencillo mantenimiento. Proporciona varias herramientas y clases encaminadas a reducir el tiempo de desarrollo de un sistema. Además, automatiza las tareas más comunes, permitiendo al desarrollador dedicarse por completo a los aspectos específicos de cada aplicación. Utiliza programación orienteda a objetos y es compatible con la mayoría de gestores de bases de datos, como MySQL, PostgreSQL, Oracle y Microsoft SQL Server. Se puede ejecutar tanto en plataformas basadas en Unix como en plataformas Windows.
 
-Es sencillo de usar en la mayoría de casos, aunque es preferible para el desarrollo de grandes aplicaciones Web que para pequeños proyectos.
+Es sencillo utilizarlo en la mayoría de casos. Sin embargo, es recomenable su empleo en desarrollos de grandes aplicaciones en lugar de pequeños proyectos.
 
-\newpage
 \textbf{Laravel} \footnote{\textbf{Laravel}. \url{https://laravel.com/}.}
 
-Es un framework Open Source para desarrollar aplicaciones y servicios web con PHP 5 y PHP 7. Su filosofía es desarrollar código PHP de forma elegante y simple, evitando el ``código espagueti''. Tiene como objetivo ser un framework que permita el uso de una sintaxis elegante y expresiva para crear código de forma sencilla y permitiendo multitud de funcionalidades. Intenta aprovechar lo mejor de otros frameworks y aprovechar las características de las últimas versiones de PHP.
+Es un framework Open Source para desarrollar aplicaciones y servicios web con PHP 5 y PHP 7. Su filosofía es desarrollar código PHP de forma elegante y simple, evitando el ``código espagueti''. Tiene como objetivo ser un framework que permita el uso de una sintaxis elegante y expresiva para crear código de forma sencilla y permitiendo multitud de funcionalidades. Intenta valerse de lo mejor de otros frameworks y aprovechar las características de las últimas versiones de PHP.
 
-Facilita la interacción con bases de datos con la ayuda de un mecanismo avanzado de creación de consultas. La autenticación de usuarios es mucho más simple ya que contiene el sistema de autenticación incorporado listo para usar. Su curva de aprendizaje relativamente baja, reduciendo costos y tiempos en el desarrollo y mantenimiento. Es flexible y adaptable al modelo MVC y posee una buena y completa documentación en su sitio oficial, acompañado de una amplia comunidad y foros.
+Facilita la interacción con bases de datos con la ayuda de un mecanismo avanzado de creación de consultas. La autenticación de usuarios es mucho más simple ya que contiene el sistema de autenticación incorporado, listo para usar. Su curva de aprendizaje es relativamente baja, reduciendo costos y tiempos en el desarrollo y mantenimiento. Es flexible y adaptable al modelo MVC y posee una buena y completa documentación en su sitio oficial, acompañado de una amplia comunidad y foros.
 
-Se encuentra en constante cambio y actualización, lo que genera la necesidad de reescribir código si se desea contar siempre con la última versión. Se recomienda utilizar una version LTS de Laravel.
+Se encuentra en constante cambio y actualización, pero esto no implica la necesidad de reescribir código si se desea contar siempre con la última versión. En lugar de esto, sólo se deben actualizar sus dependencias y automáticamente se encuentran disponibles las nuevas características aportadas por la actualización. Siiempre es recomendable utilizar una version LTS.
 
+\newpage
 \textbf{Yii} \footnote{\textbf{Yii}. \url{https://www.yiiframework.com/}.}
 
 Es un framework Open Source basado en componentes de alto rendimiento para el desarrollo rápido de aplicaciones web modernas. Debido a su arquitectura basada en componentes y su sofisticado soporte de caché, es especialmente adecuado para desarrollar aplicaciones a gran escala como portales, foros, sistemas de gestión de contenido (CMS), proyectos de comercio electrónico, servicios web REST, entre otros. Al igual que Laravel, utiliza el administrador de dependencias Composer, con el que maneja diferentes dependencias e instalaciones.
 
 Admite patrón de diseño MVC y cuenta con soporte de autenticación de usuarios incorporado. Permite el manejo de errores y \textit{logging}. Los errores son manejados y personalizados, y los \textit{log} de mensajes pueden ser categorizados, filtrados y movidos a diferentes destinos.
 
-Laravel es el framework back-end elegido por su curva de aprendizaje baja, por su gran comunidad y documentación disponible, tanto en el sitio oficial como en foros, por su sencillez, ascalabilidad y mantenibilidad.
+Luego de haber mencionado las principales características de los frameworks, Laravel ha resultado ser el framework back-end seleccionado para llevar adelante este proyecto. Se ha elegido por su curva de aprendizaje baja, por su gran comunidad y documentación disponible, por su sencillez, ascalabilidad y mantenibilidad.
 
-\newpage
 \subsection{Frameworks Front-End}
 \textbf{Bootstrap} \footnote{\textbf{Bootstrap}. \url{https://getbootstrap.com/}.}
 
-Es un kit de herramientas de código abierto para desarrollar con HTML, CSS y JS. Es una biblioteca de componentes front-end más popular del mundo. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales.
+Es un kit de herramientas de código abierto para desarrollar con HTML, CSS y Javascript. Es la biblioteca de componentes front-end más popular del mundo. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de Javascript adicionales.
 
-Bootstrap tiene un soporte relativamente incompleto para HTML5 y CSS3, pero es compatible con la mayoría de los navegadores web modernos. Desde la versión 2.0 también soporta diseños web adaptables. Esto significa que el diseño gráfico de la página se ajusta dinámicamente, tomando en cuenta las características del dispositivo usado (Computadoras, tabletas, teléfonos móviles).
+Bootstrap tiene un soporte relativamente incompleto para HTML5 y CSS3, pero es compatible con la mayoría de los navegadores web modernos. Desde la versión 2.0 también soporta diseños web adaptables. Esto significa que el diseño gráfico de la página se ajusta dinámicamente, tomando en cuenta las características del dispositivo usado (computadoras, tabletas, teléfonos inteligentes).
 
-Bootstrap es modular y consiste esencialmente en una serie de hojas de estilo Lees \footnote{\textbf{Lees}: dinámico lenguaje de hojas de estilo que puede ser compilado en Hojas de estilo en cascada (CSS) y ejecutarse en el lado del cliente o en el lado del servidor.} que implementan la variedad de componentes de la herramienta. Utilizarlo permite el uso de variables, funciones y operadores, selectores anidados, así como clases mixin. Por otra parte, los desarrolladores eligen en un formulario los componentes y ajustes deseados, y de ser necesario, los valores de varias opciones a sus necesidades.
+Bootstrap es modular y consiste esencialmente en una serie de hojas de estilo Lees \footnote{\textbf{Lees}: lenguaje dinámico de hojas de estilo que puede ser compilado en hojas de estilo en cascada (CSS) y ejecutarse del lado del cliente o del lado del servidor.} que implementan la variedad de componentes de la herramienta. Utilizarlo permite el uso de variables, funciones y operadores, selectores anidados, así como clases \textit{mixin} \footnote{\textbf{Clase Mixin}: es una clase que ofrece cierta funcionalidad para ser heredada por una subclase. Heredar de un mixin no es una forma de especialización sino más bien un medio de obtener funcionalidad}. Por otra parte, los desarrolladores eligen en un formulario los componentes y ajustes deseados, según sus necesidades.
 
+\newpage
 \textbf{Vue.js} \footnote{\textbf{Vue}. \url{https://vuejs.org/}.}
 
-Vue.js es un framework de Javascript progresivo. Es accesible, versatil y de buen rendimiento, con él es posible crear una base de código fácil de mantener y probar.
+Es un framework de Javascript progresivo. Es accesible, versatil y de buen rendimiento, con él es posible crear una base de código fácil de mantener y probar.
 
-A diferencia de otros frameworks, Vue está diseñado desde el inicio para ser adoptado incrementalmente. Por otro lado, también es perfectamente capaz de soportar aplicaciones sofisticadas utilizado en combinación con herramientas modernas y librerías compatibles.
+A diferencia de otros frameworks, está diseñado desde el inicio para ser adoptado incrementalmente. Por otro lado, también es perfectamente capaz de soportar aplicaciones sofisticadas utilizado en combinación con herramientas modernas y bibliotecas compatibles.
 
-Su núcleo está formado por una librería encargada de renderizar vistas en el navegador. Su forma de organizar el código es por medio de pequeños componentes que contienen todo el HTML, CSS y JavaScript necesario para funcionar como pieza independiente. Estas piezas se van componiendo en un árbol jerárquico de componentes hasta formar la aplicación.
+Su núcleo está formado por una biblioteca encargada de renderizar vistas en el navegador. Su forma de organizar el código es por medio de pequeños componentes que contienen todo el HTML, CSS y Javascript necesario para funcionar como pieza independiente. Estas piezas se organizan en un árbol jerárquico de componentes hasta formar la aplicación.
 
-Pero, ¿por qué elegir Vue.js?
+Algunas de las características mas importantes son:
 \begin{itemize}
-\item \textbf{Framework MVVM:} la ventaja de este tipo de frameworks es la facilidad para construir codigo bien estructurado, permitiendo construir aplicaciones complejas.
-\item \textbf{Solución ligera:} una de las grandes ventajas de Vue es el tamaño del núcleo. Este tamaño puede ir aumentando, debido a la flexibilidad y facilidad para extender el framework con variedad de soluciones de terceros que son bien recibidas por la comunidad. Su tamaño compactado reduce los tiempos de carga y velocidad de las aplicaciones.
-\item \textbf{Templates declarativos:} los templates en Vue se escriben en HTML fácilmente modificable por cualquier involucrado en el proyecto.
-\item \textbf{DOM virtual:} la implementación del DOM Virtual proporciona un alto performance que po nen a Vue como líder en rendimiento de renderizado.
+\item \textbf{Framework MVVM:} la ventaja de este tipo de frameworks es la facilidad para construir codigo bien estructurado, logrando aplicaciones complejas.
+\item \textbf{Solución ligera:} una de las grandes ventajas es el tamaño del núcleo. Este tamaño puede ir aumentando, debido a la flexibilidad y facilidad para extender el framework con variedad de soluciones de terceros que son bien recibidas por la comunidad. Su tamaño compactado reduce los tiempos de carga y velocidad de las aplicaciones.
+\item \textbf{Templates declarativos:} los templates se escriben en HTML fácilmente modificable por cualquier involucrado en el proyecto.
+\item \textbf{DOM virtual:} la implementación del DOM Virtual proporciona un alto performance, ubicándolo como líder en rendimiento de renderizado.
 \item \textbf{Two-way Data Binding:} al igual que otros framworks, emplea un data-binding bidireccional que sincroniza automáticamente el modelo con el DOM.
-\item \textbf{Curva de aprendizaje baja:} comparado con otros frameworks, Vue es una de las tecnologías JavaScript más sencillas para comenzar a desarrollar. Una de las mejores características es que se trata de un framework “friendly developer ”. Además posee una excelente documentación.
+\item \textbf{Curva de aprendizaje baja:} comparado con otros frameworks, es una de las tecnologías Javascript más sencillas para comenzar a desarrollar. Una de las mejores características es que se trata de un framework \textit{friendly developer (amigable para el desarrollador)}. Además posee una excelente documentación.
 \end{itemize}
 
-De esta manera, al emplear los beneficios de Vue en conjunto con Bootstap, herramienta previamente seleccionada, se ha logrado una interfaz gráfica de usuario limpia, sencilla y de gran rendimiento, haciendo posible una experiencia de usuario satisfactoria.
-
+\newpage
 \subsection{Bases de Datos}
-Laravel tiene soporte para los motores de bases de datos más populares como:
+Laravel tiene soporte para diversos motores de bases de datos tales como:
 \begin{itemize}
 \item \textit{MySQL}
 \item \textit{PostgreSql}
@@ -585,10 +578,9 @@ Laravel tiene soporte para los motores de bases de datos más populares como:
 \item \textit{SQL Server}
 \end{itemize}
 
-En SQLite la base de datos completa consta de un único archivo en el disco, lo que lo hace extremadamente portátil. Es ideal para desarrollar e incluso probar. En contrapartida, no cuenta con soporte para los usuarios, es decir, conexiones administradas con privilegios de acceso establecidos a la base de datos y las tablas. Además, permite que solo se lleve a cabo un solo funcionamiento de escritura en un momento dado, lo que permite un rendimiento limitado. Por lo tanto se ha decidido descartar a SQLite de la lista anterior. En cuanto a SQL Server, también debe ser descartado, debido a la falta de licencia de software libre.
+En SQLite la base de datos completa consta de un único archivo en el disco, lo que lo hace extremadamente portátil. Es ideal para desarrollar e incluso probar. En contrapartida, no cuenta con soporte para usuarios, es decir, conexiones administradas con privilegios de acceso a los datos. No permite concurrencia de conexiones, esto quiere decir que si un usuario está modificando datos, otro no podrá hacerlo hasta que el anterior termine sus acciones. Por lo tanto se ha decidido descartar a SQLite de la lista anterior. En cuanto a SQL Server, también debe ser descartado, debido a la falta de licencia de software libre.
 
-\newpage
-De esta manera, quedan aún MySQL y PostgreSql. De ellos se ha realizado un análisis mediante el cual se pueda optar por uno de ellos de manera objetiva. Hay diferencias radicales entre PostgreSQL y MySQL. Se debe tomar una decisión informada después de evaluar las diferencias y compensaciones entre los dos sistemas. hecho un resumen de las similitudes y diferencias de las capacidades y características más comúnmente evaluadas entre PostgreSQL y MySQL:
+Entonces, quedan MySQL y PostgreSql. Para optar por uno de ellos, se ha realizado un análisis en el cual son expuestas las ventajas y desventajas, similitudes y diferencias que existen entre ambos. A continuación se listan los aspectos en los que se ha basado la decisión de utilizar uno de estos motores de bases de datos.
 
 \begin{itemize}
 \item \textit{\textbf{Código Abierto}}: \textit{el software de código abierto tiene beneficios únicos —costo, flexibilidad, seguridad y responsabilidad— que no pueden ser superados por las soluciones de software privativo. El software de código abierto está disponible gratuitamente y puede ser redistribuido y modificado por cualquiera. El software de código abierto tiene viabilidad a largo plazo y siempre está a la vanguardia de la tecnología.}
@@ -599,44 +591,46 @@ De esta manera, quedan aún MySQL y PostgreSql. De ellos se ha realizado un aná
 
 \item \textit{\textbf{Cumplimiento de ACID}}: \textit{ACID (atomicidad, consistencia, aislamiento, durabilidad) es un conjunto de propiedades de las transacciones de bases de datos. El cumplimiento de ACID asegura que ningún dato se pierda o transmita a otro lugar en el sistema en caso de una falla, incluso cuando se hacen varios cambios durante una sola transacción.}
 
-\textit{PostgreSQL cumple con ACID por completo y se asegura de que se cumplan todos los requerimientos. MySQL solo cumple con ACID cuando usa los mecanismos de almacenamiento InnoDB y NDB Cluster.}
+\textit{PostgreSQL cumple con ACID por completo y se asegura de que se cumplan todos los requerimientos. MySQL solo cumple con ACID cuando se utiliza alguno de los mecanismos de almacenamiento InnoDB y NDB Cluster.}
 
-\item \textit{\textbf{Cumplimiento de SQL}}: \textit{el cumplimiento de SQL es un estándar que una base de datos debe cumplir e implementa todos los estándares y pautas para el lenguaje de consulta estructurada. Cumplir con el estándar SQL hace que sea muy fácil trasladar datos de una base de datos que cumpla con SQL hacia otra (por ejemplo, desde Oracle hacia PostgreSQL o SQL Server).}
+\item \textit{\textbf{Cumplimiento de SQL}}: \textit{es un estándar en el cual se establece que una base de datos debe cumplir e implementar los estándares y pautas del lenguaje de consulta estructurado. Cumplir con dicho estándar resulta en que sea muy fácil trasladar información de una base de datos hacia otra (por ejemplo, desde Oracle hacia PostgreSQL o SQL Server).}
 
-\textit{PostgreSQL cumple con SQL en gran medida. MySQL cumple parcialmente en algunas versiones.}
+\textit{PostgreSQL cumple con SQL en gran medida. Mientras que MySQL cumple parcialmente en algunas versiones.}
 
 \item \textit{\textbf{Replicación}}: \textit{la replicación de bases de datos es la copia electrónica regular de datos desde una base de datos en un computador o servidor hacia una base de datos en otro, de modo que todos los usuarios compartan el mismo nivel de información. El resultado es una base de datos distribuida en la cual los usuarios pueden acceder a datos relevantes para sus tareas sin interferir con el trabajo de otros.}
 
-\textit{PostgreSQL soporta replicación maestro-standby e introdujo mejoras significativas, lo que resulta en replicación casi en tiempo real y capacidad de espera activa (hot standby) para servidores standby. MySQL soporta replicación maestro-standby.}
+\textit{PostgreSQL soporta replicación maestro-standby e introduce mejoras significativas, lo que resulta en replicación casi en tiempo real y capacidad de espera activa (hot standby) para servidores standby. MySQL, también soporta replicación maestro-standby.}
 
-\item \textit{\textbf{Rendimiento}}: \textit{el rendimiento es un área que solo se puede medir evaluando las métricas de escenarios potenciales, pues depende netamente de los requerimientos del usuario en específico y en la naturaleza de la aplicación.}
+\item \textit{\textbf{Rendimiento}}: \textit{el rendimiento es un área que sólo se puede medir evaluando las métricas de escenarios potenciales, pues depende netamente de los requerimientos del usuario en específico y en la naturaleza de la aplicación.}
 
-\textit{PostgreSQL se usa ampliamente en sistemas grandes donde las velocidades de lectura y escritura son cruciales y los datos necesitan ser validados. Además, soporta una variedad de optimizaciones de rendimiento que solo están disponibles en soluciones comerciales, como soporte para datos geoespaciales, concurrencia sin bloquedo de lecturas. MySQL es una opción muy popular para proyectos basados en web que necesitan una base de datos simplemente para transacciones de datos directas y sencillas. Sin embargo, es habitual que MySQL no rinda bien cuando se somete a cargas pesadas o al intentar completar consultas complejas.}
+\textit{PostgreSQL se usa ampliamente en sistemas grandes donde las velocidades de lectura y escritura son cruciales y los datos necesitan ser validados. Además, soporta una variedad de optimizaciones de rendimiento que sólo están disponibles en soluciones comerciales, como soporte para datos geoespaciales o concurrencia sin bloqueo de lecturas. MySQL es una opción popular para proyectos basados en web que necesitan una base de datos simplemente para transacciones de datos directas y sencillas. Sin embargo, es habitual que su rendimiento no sea el adecuado al someterlo a cargas pesadas o al intentar completar consultas complejas.}
 
 \item \textit{\textbf{Seguridad}}: \textit{la seguridad de la base de datos se refiere al conjunto de medidas usadas para proteger y asegurar una base de datos o gestor de base de datos contra el uso ilegítimo, amenazas maliciosas y ataques. Es un término amplio que incluye una variedad de procesos, herramientas y metodologías que garantizan la seguridad dentro de un ambiente de base de datos.}
 
-\textit{PostgreSQL tiene roles y roles heredados para establecer y mantener los permisos. PostgreSQL tiene soporte nativo para SSL en conexiones para cifrar la comunicación cliente/servidor. También tiene seguridad a nivel de registros. Además de esto, PostgreSQL viene con una mejora integrada llamada SE-PostgreSQL, la cual provee controles de acceso adicionales basados en las políticas de seguridad de SELinux.}
+\textit{PostgreSQL tiene roles y roles heredados para establecer y mantener permisos. Tiene soporte nativo de SSL en conexiones para cifrar la comunicación cliente/servidor. También tiene seguridad a nivel de registros. Además de esto, viene con una mejora integrada llamada SE-PostgreSQL, la cual provee controles de acceso adicionales basados en las políticas de seguridad de SELinux.}
 
-\textit{MySQL implementa seguridad basada en Listas de Control de Acceso (ACLs) para todas las conexiones, consultas y otras operaciones que un usuario pudiera intentar realizar. También hay algo de soporte para conexiones cifradas con SSL entre clientes y servidores MySQL.}
+\textit{MySQL implementa la seguridad basada en Listas de Control de Acceso (ACLs) para todas las conexiones, consultas y otras operaciones que un usuario pudiera intentar realizar. También posee soporte para conexiones cifradas con SSL entre clientes y servidores MySQL.}
 
-\item \textit{\textbf{Hosting}}: \textit{a medida que más empresas optan por mover sus datos hacia la nube, la capacidad de encontrar proveedores en la nube que soporten su base de datos se vuelve cada vez más importante. El hosting en la nube permite flexibilidad en los servidores, permitiéndole expandir o contraer rápidamente su capacidad. También le permite reducir el potencial tiempo fuera de línea mientras gestiona fácilmente picos de carga de trabajo.}
+\newpage
+\item \textit{\textbf{Hosting}}: \textit{a medida que más empresas optan por mover sus datos hacia la nube, la capacidad de encontrar proveedores que soporten su base de datos, se vuelve cada vez más importante. El hosting en la nube brinda flexibilidad en los servidores, permitiendo expandir o contraer rápidamente su capacidad. También, permite reducir el tiempo potencial fuera de línea mientras gestiona fácilmente picos de carga de trabajo.}
 
-\textit{PostGre es soportado por todos los proveedores más importantes de servicios en la nube, incluyendo Amazon, Google y Microsoft. Por su parte, MySQL también es soportado por los mismos proveedores.}
+\textit{PostgreSQL es soportado por los proveedores más importantes de servicios en la nube, incluyendo Amazon, Google y Microsoft. Por su parte, MySQL también es soportado por estos proveedores.}
 
-\item \textit{\textbf{Soporte comunitario}}: \textit{PostgreSQL tiene una comunidad muy fuerte y activa que constantemente mejora características existentes, mientras sus innovadores committers se esfuerzan para asegurar que siga siendo la base de datos más avanzada con nuevas e innovadoras características y seguridad.}
+\item \textit{\textbf{Soporte comunitario}}: \textit{PostgreSQL tiene una comunidad muy fuerte y activa que constantemente mejora sus características, mientras sus innovadores committers se esfuerzan para asegurar que siga siendo la base de datos más avanzada, con nuevas e innovadoras características y seguridad.}
 	
-\textit{MySQL tiene una gran comunidad de contribuyentes que, particularmente desde la adquisición por parte de Oracle, se centra principalmente en mantener características existentes con algunas características nuevas surgiendo ocasionalmente.}
+\textit{MySQL tiene una gran comunidad de contribuyentes que, particularmente, desde la adquisición por parte de Oracle, se centra en mantener sus características con algunas características nuevas surgiendo ocasionalmente.}
 
-\item \textit{\textbf{Soporte para concurrencia}}: \textit{la concurrencia significa que varios usuarios pueden tener acceso a los datos al mismo tiempo. Es una de las principales funcionalidades consideradas al desarrollar un sistema que requiera que varios suscriptores accedan a los datos al mismo tiempo pues mejora la capacidad de que muchas personas accedan y utilicen la base de datos en varias ubicaciones simultáneamente.}
+\item \textit{\textbf{Soporte para concurrencia}}: \textit{la concurrencia significa que varios usuarios pueden tener acceso a los datos al mismo tiempo. Es una de las principales funcionalidades consideradas al desarrollar un sistema que requiera que varios suscriptores accedan a los datos al mismo tiempo, pues mejora la capacidad de que muchas personas accedan y utilicen la base de datos en varias ubicaciones, simultáneamente.}
 
-\textit{PostgreSQL hace frente a la concurrencia de forma eficiente con su implementación MVCC (control de concurrencia multiversión), la cual logra niveles muy altos de concurrencia. MySQL solo tiene soporte MVCC en InnoDB.}
+\textit{PostgreSQL hace frente a la concurrencia de forma eficiente implementando MVCC (control de concurrencia multiversión), la cual logra niveles muy altos de concurrencia. MySQL solo tiene soporte MVCC en InnoDB.}
 
-\item \textit{\textbf{Soporte para NoSQL/JSON}}: \textit{tanto NoSQL como JSON son muy populares, y las bases de datos NoSQL son cada vez más comunes. JSON es un formato simple de datos que permite a los programadores almacenar y comunicar conjunto de valores, listas y correlaciones clave-valor entre sistemas.}
+\item \textit{\textbf{Soporte para NoSQL/JSON}}: \textit{tanto NoSQL como JSON son populares, y las bases de datos NoSQL son cada vez más comunes. JSON es un formato simple de datos que permite a los programadores almacenar y comunicar conjuntos de valores, listas y correlaciones clave-valor entre sistemas.}
 
-\textit{PostgreSQL soporta JSON y otras características NoSQL como soporte nativo para XML y pares clave-valor con HSTORE. También soporta indexación de datos JSON para un acceso más rápido. MySQL tiene soporte para tipo de datos JSON, pero no para ninguna otra característica NoSQL. No soporta indexación para JSON.}
+\textit{PostgreSQL soporta JSON y otras características NoSQL como soporte nativo para XML y pares clave-valor con HSTORE. También soporta indexación de datos JSON para acceso más rápido. MySQL soporta JSON, pero no así NoSQL. Tampoco soporta indexación para JSON.}
 
-\item \textit{\textbf{Vistas materializadas y tablas temporales}}: \textit{una vista materializada es un objeto de base de datos que contiene los resultados de una consulta que puede ser actualizada según sea necesario desde la tabla base original. Se la puede ver como un ``caché'' para bases de datos. Una tabla temporal almacena datos que no se necesite que persistan más allá de lo que dure la sesión que la cree. La principal forma en que difiere de las Vistas Materializadas es que estas últimas ofrecen la capacidad de actualizar periódicamente los datos, resultando en mejor eficiencia para ese caso de uso.}
+\item \textit{\textbf{Vistas materializadas y tablas temporales}}: \textit{una vista materializada es un objeto de base de datos que contiene los resultados de una consulta que puede ser actualizada según sea necesario desde la tabla base original. Se la puede ver como un ``caché'' para bases de datos. Una tabla temporal almacena datos que no se necesite que persistan más allá de lo que dure la sesión que la cree. La principal forma en que difiere de las vistas materializadas es que estas últimas ofrecen la capacidad de actualizar periódicamente los datos, resultando en mejor eficiencia para ese caso de uso.}
 
+\newpage
 \textit{PostgreSQL soporta vistas materializadas y tablas temporales. MySQL soporta tablas temporales pero no soporta vistas materializadas.}
 
 \item \textit{\textbf{Soporte para datos geoespaciales}}: \textit{los datos geoespaciales son todos los puntos de datos geográficos que una base de datos mantiene y puede proveer para análisis. Es la información sobre un objeto físico que puede ser representada por valores numéricos en un sistema de coordenadas geográfico.}
@@ -645,15 +639,16 @@ De esta manera, quedan aún MySQL y PostgreSql. De ellos se ha realizado un aná
 
 \item \textit{\textbf{Soporte para lenguajes de programación}}: \textit{el soporte para lenguajes de programación ayuda a una gran variedad de desarrolladores a realizar muchas tareas en el lenguaje en el que tengan más experiencia. Los desarrolladores pueden decidir con libertad, a nivel de casos individuales, si van a realizar cierto procedimiento en el servidor o en el cliente, pues el servidor soporta una gran variedad de diferentes lenguajes de programación para funciones de base de datos. Los lenguajes de programación tienden a dar más poder a los desarrolladores.}
 
-\textit{PostgreSQL soporta una gran variedad de lenguajes de programación incluyendo: C/C++, Java, JavaScript, .Net, R, Perl, Python, Ruby, Tcl y otros; incluso es posible ejecutar código proporcionado por el usuario en un proceso separado (esto es, ejecutándose como trabajadores en segundo plano). MySQL tiene algo de soporte para programación del lado del servidor, en un solo lenguaje no extensible.}
+\textit{PostgreSQL soporta una gran variedad de lenguajes de programación incluyendo: C/C++, Java, Javascript, .Net, R, Perl, Python, Ruby, Tcl entre otros; incluso es posible ejecutar código proporcionado por el usuario en un proceso separado (esto es, ejecutándose como trabajadores en segundo plano). MySQL tiene algo de soporte para programación del lado del servidor, en un solo lenguaje no extensible.}
 
 \item \textit{\textbf{Sistema de tipos extensible}}: \textit{una base de datos que soporta un sistema de tipos extensible puede ser extendido por el usuario de varias formas, lo que incluye agregar nuevos tipos de datos, funciones, operadores, funciones de agregado, métodos de indexación y lenguajes de procedimientos.}
 
 \textit{PostgreSQL tiene varias características dedicadas a la extensibilidad. Es posible agregar nuevos tipos, nuevas funciones o nuevos tipos de índice, por ejemplo. MySQL no tiene soporte para extensibilidad.}
 \end{itemize}
 
+\newpage
 En la tabla \eqref{fig101} se muestra un cuadro resumen de la comparación realizada, según los puntos listados anteriormente. Aunque hay muchas similitudes y coincidencias entre ambos, también hay diferencias bien marcadas. Sin embargo, es necesario evaluar el escenario particular y determinar qué base de datos es la más adecuada para el caso de uso específico. Por el tipo de trabajo a realizar y por las caracteŕisticas buscadas, se elige a PostgresSQL como DBMS.
-
+\vspace{1cm}
 \renewcommand{\figurename}{Tabla.} 
 \begin{figure}[tbhp]
 \centerline{\includegraphics[scale=0.8]{figs/capitulo_1_analisis/Tabla_Comparativa_DB.pdf}}
@@ -665,23 +660,26 @@ En la tabla \eqref{fig101} se muestra un cuadro resumen de la comparación reali
 \newpage
 \subsection{Framewokrs para Testing}
 \begin{itemize}
-\item \textit{\textbf{PHPUnit}} \footnote{\textbf{PHPUnit}. \url{https://phpunit.de/}.}: \textit{es un entorno para realizar pruebas unitarias en el lenguaje de programación PHP. PHPUnit es un framework. Se creó con idea de que cuanto antes se detecten los errores en el código antes podrán ser corregidos. Este conocido framework para PHP nos permite crear y ejecutar juegos de tests unitarios de manera sencilla. Como todos los frameworks de pruebas unitarias, PHPUnit utiliza \textit{assertions} para verificar que el comportamiento de una unidad de código es el esperado.}
+\item \textit{\textbf{PHPUnit}} \footnote{\textbf{PHPUnit}. \url{https://phpunit.de/}.}: \textit{es un entorno para realizar pruebas en el lenguaje de programación PHP. Se creó bajo la idea de que cuanto antes se detecten los errores en el código antes podrán ser corregidos. Este conocido framework para PHP nos permite crear y ejecutar juegos de tests de manera sencilla.}
 
-\item \textit{\textbf{Selenium}} \footnote{\textbf{PHPUnit}. \url{https://www.seleniumhq.org/}.}: \textit{es un entorno de pruebas de software para aplicaciones basadas en la web. Selenium provee una herramienta de grabar/reproducir para crear pruebas sin usar un lenguaje de scripting para pruebas (Selenium IDE). Incluye también un lenguaje específico de dominio para pruebas (Selanese) para escribir pruebas en un amplio número de lenguajes de programación populares incluyendo Java, C\#, Ruby, Groovy, Perl, Php y Python. Las pruebas pueden ejecutarse entonces usando la mayoría de los navegadores web modernos en diferentes sistemas operativos como Windows, Linux y OSX.}
+\item \textit{\textbf{Selenium}} \footnote{\textbf{Selenium}. \url{https://www.seleniumhq.org/}.}: \textit{es un entorno de pruebas de software para aplicaciones basadas en la web. Provee una herramienta de grabar/reproducir para crear tests sin usar un lenguaje de scripting (Selenium IDE). Incluye también un lenguaje específico de dominio para pruebas (Selanese) que permite crear pruebas para aplicaciones desarrolladas en un amplio número de lenguajes de programación incluyendo Java, C\#, Ruby, Groovy, Perl, PHP y Python.}
 \end{itemize}
+
+El framework que será utilizado para realizar las pruebasserá PHPUnit. Esto se debe a que viene incluido en Laravel, framework back-end seleccionado para el presente desarrollo. 
 
 \subsection{Manejadores de Dependencias}
 \begin{itemize}
 \item \textit{\textbf{Bower}} \footnote{\textbf{Bower}. \url{https://bower.io/}.}: \textit{es un complemento ideal para el desarrollo web. Es un sencillo programa que nos sirve para tener al día las dependencias de un proyecto para la web, en lo que respecta al desarrollo frontend, con Javascript o incluso CSS. Se trata de un programa basado en NodeJS que se ejecuta desde la consola y que tiene un sencillo API de comandos útiles para realizar tareas de mantenimiento y administración de paquetes necesarios para construir un proyecto web, concretamente la parte del lado del cliente. Con Bower es posible descargar y actualizar todo tipo de bibliotecas, frameworks, plugins, entre otros, sin tener que preocuparse por descargarlos e instalarlos.}
-\item npm
+\item \textit{\textbf{Composer}} \footnote{\textbf{Composer}. \url{https://getcomposer.org/}.}: \textit{es una herramienta para la gestión de dependencias en PHP. Permite declarar las bibliotecas de las que depende el proyecto y las administrará (instalará/actualizará) por nosotros. Composer no es un gestor de paquetes en el mismo sentido que Yum o Apt. Sí, se trata de ``paquetes'' o bibliotecas, pero los administra en función de cada proyecto, instalándolos en un directorio (por ejemplo, vendor) dentro del proyecto. Por defecto no instala nada globalmente. Por lo tanto, es un gestor de dependencias.}
+\item \textit{\textbf{npm}} \footnote{\textbf{npm}. \url{https://www.npmjs.com/}.}: \textit{Node Package Manager o simplemente npm es el sistema de gestión de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript.}
 \end{itemize}
 
+\newpage
 \subsection{Bibliotecas}
 \begin{itemize}
 \item \textit{\textbf{jQuery}} \footnote{\textbf{jQuery}. \url{https://jquery.com/}.}: \textit{es una biblioteca de JavaScript rápida, pequeña y rica en funciones. Entre otras cosas, se encarga del recorrido y manipulación de documentos HTML, manejo de eventos, animación, y Ajax mucho más simple con una API fácil de usar que funciona en una multitud de navegadores.}
 \end{itemize}
 
-\newpage
 \subsection{Sistemas de Control de Versiones}
 \begin{itemize}
 \item \textit{\textbf{Git}} \footnote{\textbf{Git}. \url{https://git-scm.com/}.}: \textit{es un sistema de control de versiones distribuidas de código abierto y gratuito diseñado para manejar todo, desde proyectos pequeños a muy grandes, con velocidad y eficiencia. Es fácil de aprender y tiene una huella pequeña con un rendimiento increíblemente rápido. Supera a las herramientas de SCM como Subversion, CVS, Perforce y ClearCase con funciones como ramificación local barata, áreas de preparación conveniente y flujos de trabajo múltiples.}
